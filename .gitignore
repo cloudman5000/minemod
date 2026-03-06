@@ -1,0 +1,58 @@
+# ---------------------------
+# Minecraft Forge / Gradle
+# ---------------------------
+.gradle/
+**/.gradle/
+build/
+**/build/
+out/
+bin/
+
+# Generated runtime data (dev client/server runs)
+run/
+**/run/
+logs/
+**/logs/
+crash-reports/
+**/crash-reports/
+
+# ---------------------------
+# Java / JVM noise
+# ---------------------------
+*.class
+hs_err_pid*
+replay_pid*
+
+# ---------------------------
+# IDE files
+# ---------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ---------------------------
+# OS files
+# ---------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ---------------------------
+# Local-only machine config
+# ---------------------------
+local.properties
