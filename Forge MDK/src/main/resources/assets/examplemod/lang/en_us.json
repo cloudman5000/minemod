@@ -1,0 +1,9 @@
+{
+  "itemGroup.examplemod.horror_tab": "The Glitch",
+  
+  "block.examplemod.corrupting_block": "Corrupting Block",
+  "item.examplemod.corrupting_block": "Corrupting Block",
+  "item.examplemod.glitch_spawn_egg": "Glitch Spawn Egg",
+  
+  "entity.examplemod.glitch": "The Glitch"
+}
