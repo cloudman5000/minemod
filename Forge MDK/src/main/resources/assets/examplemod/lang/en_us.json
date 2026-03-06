@@ -2,8 +2,11 @@
   "itemGroup.examplemod.horror_tab": "The Glitch",
   
   "block.examplemod.corrupting_block": "Corrupting Block",
+  "block.examplemod.hacking_terminal": "Hacking Terminal",
   "item.examplemod.corrupting_block": "Corrupting Block",
+  "item.examplemod.hacking_terminal": "Hacking Terminal",
   "item.examplemod.glitch_spawn_egg": "Glitch Spawn Egg",
+  "screen.examplemod.hacking_terminal": "Reality Restoration Terminal",
   
   "entity.examplemod.glitch": "The Glitch"
 }

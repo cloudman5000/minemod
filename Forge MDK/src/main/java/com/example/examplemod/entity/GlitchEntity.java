@@ -23,6 +23,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
+import java.util.EnumSet;
 
 /**
  * The Glitch - a horror entity that teleports erratically, stalks players,
@@ -175,7 +176,7 @@ public class GlitchEntity extends Monster {
 
         public GlitchTeleportGoal(GlitchEntity glitch) {
             this.glitch = glitch;
-            this.setFlags(Goal.Flag.MOVE);
+            this.setFlags(EnumSet.of(Goal.Flag.MOVE));
         }
 
         @Override
