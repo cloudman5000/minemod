@@ -54,9 +54,12 @@ public class ExampleMod {
     // Blocks
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MODID);
-    public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(ForgeRegistries.MENU_TYPES, MODID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
+            .create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister
+            .create(ForgeRegistries.ENTITY_TYPES, MODID);
+    public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(ForgeRegistries.MENU_TYPES,
+            MODID);
 
     // === HORROR MOD CONTENT ===
 
@@ -85,9 +88,9 @@ public class ExampleMod {
     public static final RegistryObject<Item> HACKING_TERMINAL_ITEM = ITEMS.register("hacking_terminal",
             () -> new BlockItem(HACKING_TERMINAL_BLOCK.get(), new Item.Properties()));
 
-    public static final RegistryObject<MenuType<HackingTerminalMenu>> HACKING_TERMINAL_MENU =
-            MENU_TYPES.register("hacking_terminal",
-                    () -> IForgeMenuType.create(HackingTerminalMenu::new));
+    public static final RegistryObject<MenuType<HackingTerminalMenu>> HACKING_TERMINAL_MENU = MENU_TYPES.register(
+            "hacking_terminal",
+            () -> IForgeMenuType.create(HackingTerminalMenu::new));
 
     // Horror creative tab
     public static final RegistryObject<CreativeModeTab> HORROR_TAB = CREATIVE_MODE_TABS.register("horror_tab",
@@ -130,9 +133,8 @@ public class ExampleMod {
                 GLITCH.get(),
                 SpawnPlacementTypes.ON_GROUND,
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                SpawnPlacementRegisterEvent.Operation.REPLACE
-        );
+                GlitchEntity::checkGlitchSpawnRules,
+                SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 
     private void onEntityAttributes(EntityAttributeCreationEvent event) {
