@@ -23,6 +23,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 import java.util.EnumSet;
@@ -103,6 +104,31 @@ public class GlitchEntity extends Monster {
                 playSound(SoundEvents.WARDEN_HEARTBEAT, 1.5f, 0.5f);
             }
 
+            // Stalking clues (only when they do not have a target yet)
+            if (getTarget() == null && this.random.nextInt(800) == 0) {
+                Player nearest = this.level().getNearestPlayer(this, 100);
+                if (nearest != null) {
+                    // Play a distant, scary sound directly to them
+                    if (this.random.nextBoolean()) {
+                        nearest.playSound(SoundEvents.AMBIENT_CAVE.value(), 1.0f, 0.1f);
+                    } else {
+                        nearest.playSound(SoundEvents.MUSIC_DISC_11.value(), 0.5f, 0.5f);
+                    }
+
+                    // Send a corrupted chat message
+                    if (this.random.nextInt(3) == 0) {
+                        String[] messages = {
+                                "§kHe is coming§r...",
+                                "§cdon't look back§r",
+                                "§k10010101§r W§kH§rY §k01010101§r",
+                                "i see you"
+                        };
+                        nearest.sendSystemMessage(net.minecraft.network.chat.Component
+                                .literal(messages[this.random.nextInt(messages.length)]));
+                    }
+                }
+            }
+
             // Occasional terrifying micro-teleport jittering
             if (this.random.nextInt(40) == 0 && getTarget() != null && !isManifesting() && canGlitch()) {
                 double jX = this.getX() + (this.random.nextDouble() - 0.5) * 2.5;
@@ -110,6 +136,27 @@ public class GlitchEntity extends Monster {
                 double jZ = this.getZ() + (this.random.nextDouble() - 0.5) * 2.5;
                 this.teleportTo(jX, jY, jZ);
                 this.setGlitchPhase(this.random.nextInt(4));
+            }
+        } else {
+            // CLIENT SIDE LOGIC
+            Player player = Minecraft.getInstance().player;
+            if (player != null && this.distanceTo(player) < 25 && this.random.nextInt(1200) == 0) {
+                // Randomly open the fake permission screen if they are somewhat close but not
+                // in immediate combat
+                if (Minecraft.getInstance().screen == null) {
+                    Minecraft.getInstance().setScreen(new com.example.examplemod.client.FakePermissionScreen());
+                }
+            }
+        }
+
+        // SERVER SIDE NAUSEA EFFECT (Wavy Screen)
+        if (!this.level().isClientSide && this.isAlive()) {
+            Player nearest = this.level().getNearestPlayer(this, 8); // Pretty close
+            if (nearest != null) {
+                // Apply a strong nausea effect that refreshes to keep the screen wavy and
+                // distorted
+                nearest.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                        net.minecraft.world.effect.MobEffects.CONFUSION, 100, 1, true, false, false));
             }
         }
     }
