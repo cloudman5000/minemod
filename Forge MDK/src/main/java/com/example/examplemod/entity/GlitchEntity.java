@@ -21,6 +21,9 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 import java.util.EnumSet;
@@ -31,8 +34,10 @@ import java.util.EnumSet;
  */
 public class GlitchEntity extends Monster {
 
-    private static final EntityDataAccessor<Integer> DATA_GLITCH_PHASE = SynchedEntityData.defineId(GlitchEntity.class, EntityDataSerializers.INT);
-    private static final EntityDataAccessor<Boolean> DATA_IS_MANIFESTING = SynchedEntityData.defineId(GlitchEntity.class, EntityDataSerializers.BOOLEAN);
+    private static final EntityDataAccessor<Integer> DATA_GLITCH_PHASE = SynchedEntityData.defineId(GlitchEntity.class,
+            EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Boolean> DATA_IS_MANIFESTING = SynchedEntityData
+            .defineId(GlitchEntity.class, EntityDataSerializers.BOOLEAN);
 
     private int glitchCooldown = 0;
     private int manifestTimer = 0;
@@ -45,12 +50,12 @@ public class GlitchEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 30.0)
-                .add(Attributes.MOVEMENT_SPEED, 0.28)
-                .add(Attributes.ATTACK_DAMAGE, 6.0)
-                .add(Attributes.ATTACK_KNOCKBACK, 1.0)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 0.5)
-                .add(Attributes.FOLLOW_RANGE, 40.0);
+                .add(Attributes.MAX_HEALTH, 100.0) // Was 30. Much harder to kill.
+                .add(Attributes.MOVEMENT_SPEED, 0.45) // Was 0.28. Very fast.
+                .add(Attributes.ATTACK_DAMAGE, 12.0) // Was 6. Hurts a lot.
+                .add(Attributes.ATTACK_KNOCKBACK, 2.0)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 0.8)
+                .add(Attributes.FOLLOW_RANGE, 64.0); // Will track you from very far away
     }
 
     @Override
@@ -77,7 +82,8 @@ public class GlitchEntity extends Monster {
         super.tick();
 
         if (!this.level().isClientSide) {
-            if (glitchCooldown > 0) glitchCooldown--;
+            if (glitchCooldown > 0)
+                glitchCooldown--;
 
             if (getEntityData().get(DATA_IS_MANIFESTING)) {
                 manifestTimer++;
@@ -88,13 +94,93 @@ public class GlitchEntity extends Monster {
             }
 
             // Random glitch sounds - distorted, unsettling
-            if (this.random.nextInt(80) == 0 && getTarget() != null) {
-                playSound(SoundEvents.PORTAL_AMBIENT, 0.4f, 0.3f + this.random.nextFloat() * 0.5f);
+            if (this.random.nextInt(60) == 0 && getTarget() != null) {
+                playSound(SoundEvents.PORTAL_AMBIENT, 0.4f, 0.1f + this.random.nextFloat() * 0.4f);
             }
-            if (this.random.nextInt(120) == 0) {
-                playSound(SoundEvents.AMETHYST_BLOCK_CHIME, 0.5f, 0.2f);
+            if (this.random.nextInt(90) == 0) {
+                playSound(SoundEvents.AMETHYST_BLOCK_CHIME, 0.6f, 0.1f + this.random.nextFloat() * 0.3f);
+            }
+            if (this.random.nextInt(200) == 0) {
+                playSound(SoundEvents.WARDEN_HEARTBEAT, 1.5f, 0.5f);
+            }
+
+            // Stalking clues (only when they do not have a target yet)
+            // config spawn rate scales 1 - 100. Lower wait = faster spawn.
+            int stalkWait = Math.max(10,
+                    800 - (com.example.examplemod.config.ExampleModConfig.GLITCH_SPAWN_RATE.get() * 7));
+            if (getTarget() == null && this.random.nextInt(stalkWait) == 0) {
+                Player nearest = this.level().getNearestPlayer(this, 100);
+                if (nearest != null) {
+                    // Play a distant, scary sound directly to them
+                    if (this.random.nextBoolean()) {
+                        nearest.playSound(SoundEvents.AMBIENT_CAVE.value(), 1.0f, 0.1f);
+                    } else {
+                        nearest.playSound(SoundEvents.MUSIC_DISC_11.value(), 0.5f, 0.5f);
+                    }
+
+                    // Send a corrupted chat message
+                    if (this.random.nextInt(3) == 0) {
+                        String[] messages = {
+                                "§kHe is coming§r...",
+                                "§cdon't look back§r",
+                                "§k10010101§r W§kH§rY §k01010101§r",
+                                "i see you"
+                        };
+                        nearest.sendSystemMessage(net.minecraft.network.chat.Component
+                                .literal(messages[this.random.nextInt(messages.length)]));
+                    }
+                }
+            }
+
+            // Occasional terrifying micro-teleport jittering
+            if (this.random.nextInt(40) == 0 && getTarget() != null && !isManifesting() && canGlitch()) {
+                double jX = this.getX() + (this.random.nextDouble() - 0.5) * 2.5;
+                double jY = this.getY() + (this.random.nextDouble() - 0.5) * 1.5;
+                double jZ = this.getZ() + (this.random.nextDouble() - 0.5) * 2.5;
+                this.teleportTo(jX, jY, jZ);
+                this.setGlitchPhase(this.random.nextInt(4));
+            }
+        } else {
+            // CLIENT SIDE LOGIC
+            // Chance to randomly trigger the fake permission jumpscare (only if configured
+            // on)
+            if (this.random.nextInt(1000) == 0 && Minecraft.getInstance().screen == null
+                    && com.example.examplemod.config.ExampleModConfig.ALLOW_FAKE_PERMISSIONS.get()) {
+                Minecraft.getInstance().setScreen(new com.example.examplemod.client.FakePermissionScreen());
+            }
+            Player player = Minecraft.getInstance().player;
+            if (player != null && this.distanceTo(player) < 25 && this.random.nextInt(1200) == 0) {
+                // Randomly open the fake permission screen if they are somewhat close but not
+                // in immediate combat
+                if (Minecraft.getInstance().screen == null) {
+                    Minecraft.getInstance().setScreen(new com.example.examplemod.client.FakePermissionScreen());
+                }
             }
         }
+
+        // SERVER SIDE NAUSEA EFFECT (Wavy Screen)
+        if (!this.level().isClientSide && this.isAlive()) {
+            Player nearest = this.level().getNearestPlayer(this, 8); // Pretty close
+            if (nearest != null) {
+                // Apply a strong nausea effect that refreshes to keep the screen wavy and
+                // distorted
+                nearest.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                        net.minecraft.world.effect.MobEffects.CONFUSION, 100, 1, true, false, false));
+            }
+        }
+    }
+
+    public static boolean checkGlitchSpawnRules(EntityType<GlitchEntity> glitch, ServerLevelAccessor level,
+            MobSpawnType spawnType, BlockPos pos, RandomSource random) {
+
+        int spawnRate = com.example.examplemod.config.ExampleModConfig.GLITCH_SPAWN_RATE.get();
+        // Rate is 1 to 100. Lower number = less frequent.
+        // It should be extremely rare to natural spawn. Normal mob checks are fast.
+        if (random.nextInt(3000) > (spawnRate * 2)) {
+            return false;
+        }
+
+        return checkMobSpawnRules(glitch, level, spawnType, pos, random);
     }
 
     public int getGlitchPhase() {
@@ -111,7 +197,8 @@ public class GlitchEntity extends Monster {
 
     public void setManifesting(boolean manifesting) {
         getEntityData().set(DATA_IS_MANIFESTING, manifesting);
-        if (manifesting) manifestTimer = 0;
+        if (manifesting)
+            manifestTimer = 0;
     }
 
     public boolean canGlitch() {
@@ -134,7 +221,16 @@ public class GlitchEntity extends Monster {
     public boolean doHurtTarget(Entity target) {
         if (super.doHurtTarget(target)) {
             playSound(SoundEvents.SCULK_SHRIEKER_HIT, 1.0f, 0.5f);
-            setGlitchCooldown(40);
+
+            if (target instanceof LivingEntity living) {
+                // Inflict intense blindness for 5 seconds when it hits you
+                living.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                        net.minecraft.world.effect.MobEffects.BLINDNESS, 100, 0, false, true));
+                living.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                        net.minecraft.world.effect.MobEffects.DARKNESS, 100, 0, false, true));
+            }
+
+            setGlitchCooldown(10 + this.random.nextInt(15)); // Teleport away much faster after a hit
             return true;
         }
         return false;
@@ -168,7 +264,8 @@ public class GlitchEntity extends Monster {
     }
 
     /**
-     * Custom goal - teleports erratically toward the target, creating an unsettling chase
+     * Custom goal - teleports erratically toward the target, creating an unsettling
+     * chase
      */
     public static class GlitchTeleportGoal extends Goal {
         private final GlitchEntity glitch;
@@ -195,22 +292,35 @@ public class GlitchEntity extends Monster {
         @Override
         public void tick() {
             LivingEntity target = glitch.getTarget();
-            if (target == null || !target.isAlive()) return;
-            if (!glitch.canGlitch()) return;
-            if (attemptCounter++ > 20) return;
+            if (target == null || !target.isAlive())
+                return;
+            if (!glitch.canGlitch())
+                return;
+            if (attemptCounter++ > 20)
+                return;
 
             Level level = glitch.level();
-            if (!(level instanceof ServerLevel serverLevel)) return;
+            if (!(level instanceof ServerLevel serverLevel))
+                return;
 
             // Store current pos before "vanishing"
             glitch.setLastTeleportPos(glitch.position());
             glitch.setManifesting(true);
             glitch.setGlitchPhase(glitch.random.nextInt(4));
 
-            // Teleport to a position near the target - sometimes behind them!
+            // Teleport to a position near the target - heavily favoring directly behind
+            // them!
             Vec3 targetPos = target.position();
-            double angle = target.getYRot() * (Math.PI / 180) + (glitch.random.nextBoolean() ? Math.PI : 0);
-            double distance = 3 + glitch.random.nextDouble() * 4;
+            double angle;
+            if (glitch.random.nextFloat() < 0.6f) {
+                // 60% chance to teleport in the 180 degree arc behind the player
+                angle = target.getYRot() * (Math.PI / 180) + Math.PI
+                        + (glitch.random.nextDouble() - 0.5) * (Math.PI / 2);
+            } else {
+                angle = target.getYRot() * (Math.PI / 180) + (glitch.random.nextBoolean() ? Math.PI : 0);
+            }
+
+            double distance = 1.5 + glitch.random.nextDouble() * 3.5; // Closer! Was 3 to 7, now 1.5 to 5.
             double newX = targetPos.x + Mth.sin((float) angle) * distance;
             double newZ = targetPos.z + Mth.cos((float) angle) * distance;
             double newY = targetPos.y;
@@ -219,11 +329,15 @@ public class GlitchEntity extends Monster {
             for (int i = 0; i < 10; i++) {
                 BlockPos checkPos = tryPos.above(i);
                 if (level.getBlockState(checkPos).isAir() && level.getBlockState(checkPos.above()).isAir()) {
-                    if (glitch.random.nextFloat() < 0.7f) {
+                    if (glitch.random.nextFloat() < 0.85f) { // Increased chance to successfully port
                         glitch.teleportTo(newX, checkPos.getY(), newZ);
-                        glitch.setGlitchCooldown(30 + glitch.random.nextInt(40));
-                        glitch.level().playSound(null, glitch.blockPosition(), SoundEvents.PORTAL_TRIGGER, 
-                                glitch.getSoundSource(), 0.6f, 0.4f);
+                        // Face the player immediately
+                        glitch.lookAt(target, 180.0f, 180.0f);
+                        glitch.setYHeadRot(glitch.getYRot());
+                        glitch.setYBodyRot(glitch.getYRot());
+                        glitch.setGlitchCooldown(15 + glitch.random.nextInt(25)); // Much shorter cooldown. Relentless.
+                        glitch.level().playSound(null, glitch.blockPosition(), SoundEvents.ENDERMAN_TELEPORT,
+                                glitch.getSoundSource(), 1.0f, 0.3f);
                         break;
                     }
                 }

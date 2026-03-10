@@ -1,0 +1,5769 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 21.0.9, JVM: 21.0.9+10-LTS (Eclipse Adoptium), Arch: amd64
+
+> Task :compileJava
+.\gradlew : C:\Users\l
+ione\git\minemod\Forge
+ MDK\build\tmp\.cache\
+expanded\zip_53cbd4df4
+ddc2fef2bb57dd17e0f814
+3\net\minecraft\world\
+level\levelgen\structu
+re\structures\Strongho
+ldPieces.java:34: 
+error: ';' expected
+At line:1 char:1
++ .\gradlew build 
+--console=plain > 
+build_log_unix.txt 
+2>&1 ; Select-St ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (C:\Users\l   
+ ione\...r: ';' ex    
+pected:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.1;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:35: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.2;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:36: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.3;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+           ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: '(' or 
+'[' expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+            ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:58: error: 
+<identifier> expected
+        new 2(Strongho
+ldPieces.PortalRoom.cl
+ass, 20, 1)
+                      
+                      
+   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:60: error: unnamed 
+classes are a preview 
+feature and are 
+disabled by default.
+    private static Lis
+t<StrongholdPieces.Pie
+ceWeight> 
+currentPieces;
+                   ^
+  (use 
+--enable-preview to 
+enable unnamed 
+classes)
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1786: error: class, 
+interface, enum, or 
+record expected
+}
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1: error: unnamed 
+class should not have 
+package declaration
+package net.minecraft.
+world.level.levelgen.s
+tructure.structures;
+^
+41 errors
+org.gradle.api.interna
+l.tasks.compile.Compil
+ationFailedException: 
+Compilation failed; 
+see the compiler 
+output below.
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:34: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.1;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:35: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.2;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:36: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.3;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+           ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: '(' or 
+'[' expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+            ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:58: error: 
+<identifier> expected
+        new 2(Strongho
+ldPieces.PortalRoom.cl
+ass, 20, 1)
+                      
+                      
+   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:60: error: unnamed 
+classes are a preview 
+feature and are 
+disabled by default.
+    private static Lis
+t<StrongholdPieces.Pie
+ceWeight> 
+currentPieces;
+                   ^
+  (use 
+--enable-preview to 
+enable unnamed 
+classes)
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1786: error: class, 
+interface, enum, or 
+record expected
+}
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1: error: unnamed 
+class should not have 
+package declaration
+package net.minecraft.
+world.level.levelgen.s
+tructure.structures;
+^
+41 errors
+	at org.gradle.api.int
+ernal.tasks.compile.Jd
+kJavaCompiler.execute(
+JdkJavaCompiler.java:8
+4)
+	at org.gradle.api.int
+ernal.tasks.compile.Jd
+kJavaCompiler.execute(
+JdkJavaCompiler.java:4
+6)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+delegateAndHandleError
+s(NormalizingJavaCompi
+ler.java:98)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+execute(NormalizingJav
+aCompiler.java:52)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+execute(NormalizingJav
+aCompiler.java:38)
+	at org.gradle.api.int
+ernal.tasks.compile.An
+notationProcessorDisco
+veringCompiler.execute
+(AnnotationProcessorDi
+scoveringCompiler.java
+:52)
+	at org.gradle.api.int
+ernal.tasks.compile.An
+notationProcessorDisco
+veringCompiler.execute
+(AnnotationProcessorDi
+scoveringCompiler.java
+:38)
+	at org.gradle.api.int
+ernal.tasks.compile.Mo
+duleApplicationNameWri
+tingCompiler.execute(M
+oduleApplicationNameWr
+itingCompiler.java:46)
+	at org.gradle.api.int
+ernal.tasks.compile.Mo
+duleApplicationNameWri
+tingCompiler.execute(M
+oduleApplicationNameWr
+itingCompiler.java:36)
+	at org.gradle.jvm.too
+lchain.internal.Defaul
+tToolchainJavaCompiler
+.execute(DefaultToolch
+ainJavaCompiler.java:5
+7)
+	at org.gradle.api.tas
+ks.compile.JavaCompile
+.lambda$createToolchai
+nCompiler$3(JavaCompil
+e.java:205)
+	at org.gradle.api.int
+ernal.tasks.compile.Cl
+eaningJavaCompiler.exe
+cute(CleaningJavaCompi
+ler.java:53)
+	at org.gradle.api.int
+ernal.tasks.compile.Cl
+eaningJavaCompiler.exe
+cute(CleaningJavaCompi
+ler.java:32)
+	at net.minecraftforge
+.gradle.userdev.tasks.
+HackyJavaCompile.doHac
+kyCompile(HackyJavaCom
+pile.java:45)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.compileJav
+a(MinecraftUserRepo.ja
+va:1411)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findRecomp
+(MinecraftUserRepo.jav
+a:1266)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findRaw(Mi
+necraftUserRepo.java:5
+97)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findFile(M
+inecraftUserRepo.java:
+461)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo.getArtifact(Bas
+eRepo.java:67)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo.getArtifact(Bas
+eRepo.java:27)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo$Builder.lambda$
+null$0(BaseRepo.java:1
+20)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo$Builder.lambda$
+attach$2(BaseRepo.java
+:122)
+	at net.minecraftforge
+.artifactural.base.rep
+ository.ArtifactProvid
+erBuilder$Complete.get
+Artifact(ArtifactProvi
+derBuilder.java:92)
+	at net.minecraftforge
+.artifactural.base.rep
+ository.SimpleReposito
+ry.getArtifact(SimpleR
+epository.java:41)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.findArtifa
+ct(GradleRepositoryAda
+pter.java:388)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.resource(G
+radleRepositoryAdapter
+.java:367)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.resource(G
+radleRepositoryAdapter
+.java:333)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Defaul
+tExternalResourceArtif
+actResolver.staticReso
+urceExists(DefaultExte
+rnalResourceArtifactRe
+solver.java:79)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Defaul
+tExternalResourceArtif
+actResolver.artifactEx
+ists(DefaultExternalRe
+sourceArtifactResolver
+.java:67)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.DefaultMavenLoc
+alArtifactRepository$M
+avenLocalMetadataValid
+ator.isUsableModule(De
+faultMavenLocalArtifac
+tRepository.java:123)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.metadata.Defaul
+tMavenPomMetadataSourc
+e.parseMetaDataFromRes
+ource(DefaultMavenPomM
+etadataSource.java:76)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.metadata.Abstra
+ctRepositoryMetadataSo
+urce.parseMetaDataFrom
+Artifact(AbstractRepos
+itoryMetadataSource.ja
+va:82)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.metadata.Abstra
+ctRepositoryMetadataSo
+urce.create(AbstractRe
+positoryMetadataSource
+.java:69)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.metadata.Defaul
+tMavenPomMetadataSourc
+e.create(DefaultMavenP
+omMetadataSource.java:
+40)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.metadata.Redire
+ctingGradleMetadataMod
+uleMetadataSource.crea
+te(RedirectingGradleMe
+tadataModuleMetadataSo
+urce.java:52)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Extern
+alResourceResolver.res
+olveStaticDependency(E
+xternalResourceResolve
+r.java:235)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.MavenR
+esolver.doResolveCompo
+nentMetaData(MavenReso
+lver.java:108)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Extern
+alResourceResolver$Rem
+oteRepositoryAccess.re
+solveComponentMetaData
+(ExternalResourceResol
+ver.java:427)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$1$1.resolveComponentM
+etaData(GradleReposito
+ryAdapter.java:211)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Cachin
+gModuleComponentReposi
+tory$ResolveAndCacheRe
+positoryAccess.resolve
+ComponentMetaDataAndCa
+che(CachingModuleCompo
+nentRepository.java:39
+6)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Cachin
+gModuleComponentReposi
+tory$ResolveAndCacheRe
+positoryAccess.resolve
+ComponentMetaData(Cach
+ingModuleComponentRepo
+sitory.java:390)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.LocalM
+oduleComponentReposito
+ry$LocalAccess.resolve
+ComponentMetaData(Loca
+lModuleComponentReposi
+tory.java:75)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.lambda$res
+olveComponentMetaData$
+5(ErrorHandlingModuleC
+omponentRepository.jav
+a:150)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.lambda$try
+ResolveAndMaybeDisable
+$15(ErrorHandlingModul
+eComponentRepository.j
+ava:220)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.tryResolve
+AndMaybeDisable(ErrorH
+andlingModuleComponent
+Repository.java:236)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.tryResolve
+AndMaybeDisable(ErrorH
+andlingModuleComponent
+Repository.java:219)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.performOpe
+rationWithRetries(Erro
+rHandlingModuleCompone
+ntRepository.java:203)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.resolveCom
+ponentMetaData(ErrorHa
+ndlingModuleComponentR
+epository.java:149)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Filter
+edModuleComponentRepos
+itory$FilteringAccess.
+lambda$resolveComponen
+tMetaData$2(FilteredMo
+duleComponentRepositor
+y.java:106)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Filter
+edModuleComponentRepos
+itory$FilteringAccess.
+whenModulePresent(Filt
+eredModuleComponentRep
+ository.java:133)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Filter
+edModuleComponentRepos
+itory$FilteringAccess.
+resolveComponentMetaDa
+ta(FilteredModuleCompo
+nentRepository.java:10
+5)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Compon
+entMetaDataResolveStat
+e.process(ComponentMet
+aDataResolveState.java
+:70)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Compon
+entMetaDataResolveStat
+e.resolve(ComponentMet
+aDataResolveState.java
+:49)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainComponentMeta
+DataResolver.findBestM
+atch(RepositoryChainCo
+mponentMetaDataResolve
+r.java:165)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainComponentMeta
+DataResolver.findBestM
+atch(RepositoryChainCo
+mponentMetaDataResolve
+r.java:145)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainComponentMeta
+DataResolver.resolveMo
+dule(RepositoryChainCo
+mponentMetaDataResolve
+r.java:115)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainComponentMeta
+DataResolver.lambda$cr
+eateValueContainerFor$
+1(RepositoryChainCompo
+nentMetaDataResolver.j
+ava:85)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainerFactory$Supp
+lierBackedCalculator.c
+alculateValue(Calculat
+edValueContainerFactor
+y.java:69)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer$Calculation
+State.lambda$attachVal
+ue$0(CalculatedValueCo
+ntainer.java:229)
+	at org.gradle.interna
+l.Try.ofFailable(Try.j
+ava:50)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer$Calculation
+State.attachValue(Calc
+ulatedValueContainer.j
+ava:224)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer.finalizeIfN
+otAlready(CalculatedVa
+lueContainer.java:195)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer.finalizeIfN
+otAlready(CalculatedVa
+lueContainer.java:186)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainComponentMeta
+DataResolver.resolve(R
+epositoryChainComponen
+tMetaDataResolver.java
+:77)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.Com
+ponentResolversChain$C
+omponentMetaDataResolv
+erChain.resolve(Compon
+entResolversChain.java
+:90)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.clientmodule.Clie
+ntModuleResolver.resol
+ve(ClientModuleResolve
+r.java:70)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.ComponentSt
+ate.resolve(ComponentS
+tate.java:224)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.ComponentSt
+ate.getResolveStateOrN
+ull(ComponentState.jav
+a:168)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.EdgeState.c
+alculateTargetNodes(Ed
+geState.java:213)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.EdgeState.a
+ttachToTargetNodes(Edg
+eState.java:148)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.DependencyG
+raphBuilder.attachToTa
+rgetRevisionsSerially(
+DependencyGraphBuilder
+.java:387)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.DependencyG
+raphBuilder.resolveEdg
+es(DependencyGraphBuil
+der.java:277)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.DependencyG
+raphBuilder.traverseGr
+aph(DependencyGraphBui
+lder.java:202)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.gra
+ph.builder.DependencyG
+raphBuilder.resolve(De
+pendencyGraphBuilder.j
+ava:161)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.Dep
+endencyGraphResolver.r
+esolve(DependencyGraph
+Resolver.java:117)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ResolutionExecuto
+r.doResolve(Resolution
+Executor.java:519)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ResolutionExecuto
+r.resolveGraph(Resolut
+ionExecutor.java:374)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ShortCircuitingRe
+solutionExecutor.resol
+veGraph(ShortCircuitin
+gResolutionExecutor.ja
+va:96)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.DefaultConfigurat
+ionResolver.resolveGra
+ph(DefaultConfiguratio
+nResolver.java:105)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration$1.call(Default
+Configuration.java:777
+)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration$1.call(Default
+Configuration.java:769
+)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.resolveGraphIn
+BuildOperation(Default
+Configuration.java:769
+)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.lambda$resolve
+ExclusivelyIfRequired$
+5(DefaultConfiguration
+.java:761)
+	at org.gradle.api.int
+ernal.project.DefaultP
+rojectStateRegistry$Ca
+lculatedModelValueImpl
+.update(DefaultProject
+StateRegistry.java:509
+)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.resolveExclusi
+velyIfRequired(Default
+Configuration.java:756
+)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.resolveGraphIf
+Required(DefaultConfig
+uration.java:749)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.access$900(Def
+aultConfiguration.java
+:159)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration$ResolverResult
+sResolutionResultProvi
+der.getValue(DefaultCo
+nfiguration.java:722)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration$ResolverResult
+sResolutionResultProvi
+der.getValue(DefaultCo
+nfiguration.java:708)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.ResolutionRes
+ultProvider$1.getValue
+(ResolutionResultProvi
+der.java:54)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.ResolutionRes
+ultProviderBackedSelec
+tedArtifactSet.visitAr
+tifacts(ResolutionResu
+ltProviderBackedSelect
+edArtifactSet.java:50)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.SelectedArtifact
+Set.visitFiles(Selecte
+dArtifactSet.java:34)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.ResolutionBac
+kedFileCollection.visi
+tContents(ResolutionBa
+ckedFileCollection.jav
+a:75)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.visitContents(
+DefaultConfiguration.j
+ava:550)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.lambda$vi
+sitContents$0(Composit
+eFileCollection.java:1
+13)
+	at org.gradle.api.int
+ernal.file.collections
+.UnpackingVisitor.add(
+UnpackingVisitor.java:
+67)
+	at org.gradle.api.int
+ernal.file.collections
+.UnpackingVisitor.add(
+UnpackingVisitor.java:
+92)
+	at org.gradle.api.int
+ernal.file.DefaultFile
+CollectionFactory$Reso
+lvingFileCollection.vi
+sitChildren(DefaultFil
+eCollectionFactory.jav
+a:306)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.visitCont
+ents(CompositeFileColl
+ection.java:113)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.lambda$vi
+sitContents$0(Composit
+eFileCollection.java:1
+13)
+	at org.gradle.api.int
+ernal.tasks.PropertyFi
+leCollection.visitChil
+dren(PropertyFileColle
+ction.java:48)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.visitCont
+ents(CompositeFileColl
+ection.java:113)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.interna
+l.fingerprint.impl.Def
+aultFileCollectionSnap
+shotter.snapshot(Defau
+ltFileCollectionSnapsh
+otter.java:47)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltInputFingerprinter$I
+nputCollectingVisitor.
+visitInputFileProperty
+(DefaultInputFingerpri
+nter.java:133)
+	at org.gradle.api.int
+ernal.tasks.execution.
+TaskExecution.visitReg
+ularInputs(TaskExecuti
+on.java:324)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltInputFingerprinter.f
+ingerprintInputPropert
+ies(DefaultInputFinger
+printer.java:63)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.captureE
+xecutionStateWithOutpu
+ts(AbstractCaptureStat
+eBeforeExecutionStep.j
+ava:109)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.lambda$c
+aptureExecutionState$0
+(AbstractCaptureStateB
+eforeExecutionStep.jav
+a:74)
+	at org.gradle.interna
+l.execution.steps.Buil
+dOperationStep$1.call(
+BuildOperationStep.jav
+a:37)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.interna
+l.execution.steps.Buil
+dOperationStep.operati
+on(BuildOperationStep.
+java:34)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.captureE
+xecutionState(Abstract
+CaptureStateBeforeExec
+utionStep.java:69)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.execute(
+AbstractCaptureStateBe
+foreExecutionStep.java
+:62)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.execute(
+AbstractCaptureStateBe
+foreExecutionStep.java
+:43)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+executeWithNonEmptySou
+rces(AbstractSkipEmpty
+WorkStep.java:125)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+execute(AbstractSkipEm
+ptyWorkStep.java:61)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+execute(AbstractSkipEm
+ptyWorkStep.java:36)
+	at org.gradle.interna
+l.execution.steps.lega
+cy.MarkSnapshottingInp
+utsStartedStep.execute
+(MarkSnapshottingInput
+sStartedStep.java:38)
+	at org.gradle.interna
+l.execution.steps.Load
+PreviousExecutionState
+Step.execute(LoadPrevi
+ousExecutionStateStep.
+java:36)
+	at org.gradle.interna
+l.execution.steps.Load
+PreviousExecutionState
+Step.execute(LoadPrevi
+ousExecutionStateStep.
+java:23)
+	at org.gradle.interna
+l.execution.steps.Hand
+leStaleOutputsStep.exe
+cute(HandleStaleOutput
+sStep.java:75)
+	at org.gradle.interna
+l.execution.steps.Hand
+leStaleOutputsStep.exe
+cute(HandleStaleOutput
+sStep.java:41)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.lambda$execute$0(Assi
+gnMutableWorkspaceStep
+.java:35)
+	at org.gradle.api.int
+ernal.tasks.execution.
+TaskExecution$4.withWo
+rkspace(TaskExecution.
+java:289)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.execute(AssignMutable
+WorkspaceStep.java:31)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.execute(AssignMutable
+WorkspaceStep.java:22)
+	at org.gradle.interna
+l.execution.steps.Choo
+sePipelineStep.execute
+(ChoosePipelineStep.ja
+va:40)
+	at org.gradle.interna
+l.execution.steps.Choo
+sePipelineStep.execute
+(ChoosePipelineStep.ja
+va:23)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.lambda$execu
+te$2(ExecuteWorkBuildO
+perationFiringStep.jav
+a:67)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.execute(Exec
+uteWorkBuildOperationF
+iringStep.java:67)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.execute(Exec
+uteWorkBuildOperationF
+iringStep.java:39)
+	at org.gradle.interna
+l.execution.steps.Iden
+tityCacheStep.execute(
+IdentityCacheStep.java
+:46)
+	at org.gradle.interna
+l.execution.steps.Iden
+tityCacheStep.execute(
+IdentityCacheStep.java
+:34)
+	at org.gradle.interna
+l.execution.steps.Iden
+tifyStep.execute(Ident
+ifyStep.java:48)
+	at org.gradle.interna
+l.execution.steps.Iden
+tifyStep.execute(Ident
+ifyStep.java:35)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltExecutionEngine$1.ex
+ecute(DefaultExecution
+Engine.java:61)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ExecuteActionsTaskExec
+uter.executeIfValid(Ex
+ecuteActionsTaskExecut
+er.java:127)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ExecuteActionsTaskExec
+uter.execute(ExecuteAc
+tionsTaskExecuter.java
+:116)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ProblemsTaskPathTracki
+ngTaskExecuter.execute
+(ProblemsTaskPathTrack
+ingTaskExecuter.java:4
+0)
+	at org.gradle.api.int
+ernal.tasks.execution.
+FinalizePropertiesTask
+Executer.execute(Final
+izePropertiesTaskExecu
+ter.java:46)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ResolveTaskExecutionMo
+deExecuter.execute(Res
+olveTaskExecutionModeE
+xecuter.java:51)
+	at org.gradle.api.int
+ernal.tasks.execution.
+SkipTaskWithNoActionsE
+xecuter.execute(SkipTa
+skWithNoActionsExecute
+r.java:57)
+	at org.gradle.api.int
+ernal.tasks.execution.
+SkipOnlyIfTaskExecuter
+.execute(SkipOnlyIfTas
+kExecuter.java:74)
+	at org.gradle.api.int
+ernal.tasks.execution.
+CatchExceptionTaskExec
+uter.execute(CatchExce
+ptionTaskExecuter.java
+:36)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.executeTask(EventF
+iringTaskExecuter.java
+:77)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.call(EventFiringTa
+skExecuter.java:55)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.call(EventFiringTa
+skExecuter.java:52)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r.execute(EventFiringT
+askExecuter.java:52)
+	at org.gradle.executi
+on.plan.LocalTaskNodeE
+xecutor.execute(LocalT
+askNodeExecutor.java:4
+2)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Invok
+eNodeExecutorsAction.e
+xecute(DefaultTaskExec
+utionGraph.java:331)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Invok
+eNodeExecutorsAction.e
+xecute(DefaultTaskExec
+utionGraph.java:318)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.lambda$execute
+$0(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.interna
+l.operations.CurrentBu
+ildOperationRef.with(C
+urrentBuildOperationRe
+f.java:85)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.execute(Defaul
+tTaskExecutionGraph.ja
+va:314)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.execute(Defaul
+tTaskExecutionGraph.ja
+va:303)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor$ExecutorWorker.e
+xecute(DefaultPlanExec
+utor.java:459)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor$ExecutorWorker.r
+un(DefaultPlanExecutor
+.java:376)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor.process(DefaultP
+lanExecutor.java:111)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph.execu
+teWithServices(Default
+TaskExecutionGraph.jav
+a:138)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph.execu
+te(DefaultTaskExecutio
+nGraph.java:123)
+	at org.gradle.executi
+on.SelectedTaskExecuti
+onAction.execute(Selec
+tedTaskExecutionAction
+.java:35)
+	at org.gradle.executi
+on.DryRunBuildExecutio
+nAction.execute(DryRun
+BuildExecutionAction.j
+ava:51)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor$E
+xecuteTasks.call(Build
+OperationFiringBuildWo
+rkerExecutor.java:54)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor$E
+xecuteTasks.call(Build
+OperationFiringBuildWo
+rkerExecutor.java:43)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor.e
+xecute(BuildOperationF
+iringBuildWorkerExecut
+or.java:40)
+	at org.gradle.interna
+l.build.DefaultBuildLi
+fecycleController.lamb
+da$executeTasks$10(Def
+aultBuildLifecycleCont
+roller.java:313)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.doTransiti
+on(StateTransitionCont
+roller.java:266)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.lambda$try
+Transition$8(StateTran
+sitionController.java:
+177)
+	at org.gradle.interna
+l.work.DefaultSynchron
+izer.withLock(DefaultS
+ynchronizer.java:46)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.tryTransit
+ion(StateTransitionCon
+troller.java:177)
+	at org.gradle.interna
+l.build.DefaultBuildLi
+fecycleController.exec
+uteTasks(DefaultBuildL
+ifecycleController.jav
+a:304)
+	at org.gradle.interna
+l.build.DefaultBuildWo
+rkGraphController$Defa
+ultBuildWorkGraph.runW
+ork(DefaultBuildWorkGr
+aphController.java:220
+)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.withLocks(D
+efaultWorkerLeaseServi
+ce.java:263)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.runAsWorker
+Thread(DefaultWorkerLe
+aseService.java:127)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController.doRun(Def
+aultBuildController.ja
+va:181)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController.access$00
+0(DefaultBuildControll
+er.java:50)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController$BuildOpRu
+nnable.lambda$run$0(De
+faultBuildController.j
+ava:198)
+	at org.gradle.interna
+l.operations.CurrentBu
+ildOperationRef.with(C
+urrentBuildOperationRe
+f.java:85)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController$BuildOpRu
+nnable.run(DefaultBuil
+dController.java:198)
+	at org.gradle.interna
+l.concurrent.ExecutorP
+olicy$CatchAndRecordFa
+ilures.onExecute(Execu
+torPolicy.java:64)
+	at org.gradle.interna
+l.concurrent.AbstractM
+anagedExecutor$1.run(A
+bstractManagedExecutor
+.java:48)
+Compile failed in findRecomp. See log for more details
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:34: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.1;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:35: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.2;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:36: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.3;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+           ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: '(' or 
+'[' expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+            ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:58: error: 
+<identifier> expected
+        new 2(Strongho
+ldPieces.PortalRoom.cl
+ass, 20, 1)
+                      
+                      
+   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:60: error: unnamed 
+classes are a preview 
+feature and are 
+disabled by default.
+    private static Lis
+t<StrongholdPieces.Pie
+ceWeight> 
+currentPieces;
+                   ^
+  (use 
+--enable-preview to 
+enable unnamed 
+classes)
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1786: error: class, 
+interface, enum, or 
+record expected
+}
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1: error: unnamed 
+class should not have 
+package declaration
+package net.minecraft.
+world.level.levelgen.s
+tructure.structures;
+^
+41 errors
+org.gradle.api.interna
+l.tasks.compile.Compil
+ationFailedException: 
+Compilation failed; 
+see the compiler 
+output below.
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:34: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.1;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:35: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.2;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:36: error: ';' 
+expected
+import net.minecraft.w
+orld.level.levelgen.st
+ructure.structures.Str
+ongholdPieces.3;
+                      
+                      
+                      
+             ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+           ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: '(' or 
+'[' expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+            ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:57: error: 
+<identifier> expected
+        new 1(Strongho
+ldPieces.Library.class
+, 10, 2),
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:58: error: 
+<identifier> expected
+        new 2(Strongho
+ldPieces.PortalRoom.cl
+ass, 20, 1)
+                      
+                      
+   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:60: error: unnamed 
+classes are a preview 
+feature and are 
+disabled by default.
+    private static Lis
+t<StrongholdPieces.Pie
+ceWeight> 
+currentPieces;
+                   ^
+  (use 
+--enable-preview to 
+enable unnamed 
+classes)
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1592: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1651: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: ')' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                     ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+         ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+          ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                 ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                  ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                   ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                    ^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1710: error: case, 
+default, or '}' 
+expected
+                
+switch (3.$SwitchMap$n
+et$minecraft$core$Dire
+ction[direction.ordina
+l()]) {
+                      
+                      
+                      
+                      
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1786: error: class, 
+interface, enum, or 
+record expected
+}
+^
+C:\Users\lione\git\min
+emod\Forge MDK\build\t
+mp\.cache\expanded\zip
+_53cbd4df4ddc2fef2bb57
+dd17e0f8143\net\minecr
+aft\world\level\levelg
+en\structure\structure
+s\StrongholdPieces.jav
+a:1: error: unnamed 
+class should not have 
+package declaration
+package net.minecraft.
+world.level.levelgen.s
+tructure.structures;
+^
+41 errors
+	at org.gradle.api.int
+ernal.tasks.compile.Jd
+kJavaCompiler.execute(
+JdkJavaCompiler.java:8
+4)
+	at org.gradle.api.int
+ernal.tasks.compile.Jd
+kJavaCompiler.execute(
+JdkJavaCompiler.java:4
+6)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+delegateAndHandleError
+s(NormalizingJavaCompi
+ler.java:98)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+execute(NormalizingJav
+aCompiler.java:52)
+	at org.gradle.api.int
+ernal.tasks.compile.No
+rmalizingJavaCompiler.
+execute(NormalizingJav
+aCompiler.java:38)
+	at org.gradle.api.int
+ernal.tasks.compile.An
+notationProcessorDisco
+veringCompiler.execute
+(AnnotationProcessorDi
+scoveringCompiler.java
+:52)
+	at org.gradle.api.int
+ernal.tasks.compile.An
+notationProcessorDisco
+veringCompiler.execute
+(AnnotationProcessorDi
+scoveringCompiler.java
+:38)
+	at org.gradle.api.int
+ernal.tasks.compile.Mo
+duleApplicationNameWri
+tingCompiler.execute(M
+oduleApplicationNameWr
+itingCompiler.java:46)
+	at org.gradle.api.int
+ernal.tasks.compile.Mo
+duleApplicationNameWri
+tingCompiler.execute(M
+oduleApplicationNameWr
+itingCompiler.java:36)
+	at org.gradle.jvm.too
+lchain.internal.Defaul
+tToolchainJavaCompiler
+.execute(DefaultToolch
+ainJavaCompiler.java:5
+7)
+	at org.gradle.api.tas
+ks.compile.JavaCompile
+.lambda$createToolchai
+nCompiler$3(JavaCompil
+e.java:205)
+	at org.gradle.api.int
+ernal.tasks.compile.Cl
+eaningJavaCompiler.exe
+cute(CleaningJavaCompi
+ler.java:53)
+	at org.gradle.api.int
+ernal.tasks.compile.Cl
+eaningJavaCompiler.exe
+cute(CleaningJavaCompi
+ler.java:32)
+	at net.minecraftforge
+.gradle.userdev.tasks.
+HackyJavaCompile.doHac
+kyCompile(HackyJavaCom
+pile.java:45)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.compileJav
+a(MinecraftUserRepo.ja
+va:1411)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findRecomp
+(MinecraftUserRepo.jav
+a:1266)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findRaw(Mi
+necraftUserRepo.java:5
+97)
+	at net.minecraftforge
+.gradle.userdev.Minecr
+aftUserRepo.findFile(M
+inecraftUserRepo.java:
+461)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo.getArtifact(Bas
+eRepo.java:67)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo.getArtifact(Bas
+eRepo.java:27)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo$Builder.lambda$
+null$0(BaseRepo.java:1
+20)
+	at net.minecraftforge
+.gradle.common.util.Ba
+seRepo$Builder.lambda$
+attach$2(BaseRepo.java
+:122)
+	at net.minecraftforge
+.artifactural.base.rep
+ository.ArtifactProvid
+erBuilder$Complete.get
+Artifact(ArtifactProvi
+derBuilder.java:92)
+	at net.minecraftforge
+.artifactural.base.rep
+ository.SimpleReposito
+ry.getArtifact(SimpleR
+epository.java:41)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.findArtifa
+ct(GradleRepositoryAda
+pter.java:388)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.resource(G
+radleRepositoryAdapter
+.java:367)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$GeneratingFileResourc
+eRepository.resource(G
+radleRepositoryAdapter
+.java:361)
+	at org.gradle.interna
+l.resource.transport.f
+ile.FileTransport$File
+CacheAwareExternalReso
+urceAccessor.getResour
+ce(FileTransport.java:
+74)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Defaul
+tExternalResourceArtif
+actResolver.downloadBy
+Coords(DefaultExternal
+ResourceArtifactResolv
+er.java:149)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Defaul
+tExternalResourceArtif
+actResolver.downloadSt
+aticResource(DefaultEx
+ternalResourceArtifact
+Resolver.java:94)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Defaul
+tExternalResourceArtif
+actResolver.resolveArt
+ifact(DefaultExternalR
+esourceArtifactResolve
+r.java:62)
+	at org.gradle.api.int
+ernal.artifacts.reposi
+tories.resolver.Extern
+alResourceResolver$Rem
+oteRepositoryAccess.re
+solveArtifact(External
+ResourceResolver.java:
+478)
+	at net.minecraftforge
+.artifactural.gradle.G
+radleRepositoryAdapter
+$1$1.resolveArtifact(G
+radleRepositoryAdapter
+.java:290)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Cachin
+gModuleComponentReposi
+tory$ResolveAndCacheRe
+positoryAccess.resolve
+Artifact(CachingModule
+ComponentRepository.ja
+va:463)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.LocalM
+oduleComponentReposito
+ry$LocalAccess.resolve
+Artifact(LocalModuleCo
+mponentRepository.java
+:91)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.lambda$res
+olveArtifact$12(ErrorH
+andlingModuleComponent
+Repository.java:169)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.tryResolve
+AndMaybeDisable(ErrorH
+andlingModuleComponent
+Repository.java:236)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.performOpe
+rationWithRetries(Erro
+rHandlingModuleCompone
+ntRepository.java:193)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.ErrorH
+andlingModuleComponent
+Repository$ErrorHandli
+ngModuleComponentRepos
+itoryAccess.resolveArt
+ifact(ErrorHandlingMod
+uleComponentRepository
+.java:167)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Filter
+edModuleComponentRepos
+itory$FilteringAccess.
+resolveArtifact(Filter
+edModuleComponentRepos
+itory.java:117)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainArtifactResol
+ver.resolveArtifactLat
+er(RepositoryChainArti
+factResolver.java:73)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.ivyresolve.Reposi
+toryChainArtifactResol
+ver.lambda$resolveArti
+fact$0(RepositoryChain
+ArtifactResolver.java:
+63)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainerFactory$Supp
+lierBackedCalculator.c
+alculateValue(Calculat
+edValueContainerFactor
+y.java:69)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer$Calculation
+State.lambda$attachVal
+ue$0(CalculatedValueCo
+ntainer.java:229)
+	at org.gradle.interna
+l.Try.ofFailable(Try.j
+ava:50)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer$Calculation
+State.attachValue(Calc
+ulatedValueContainer.j
+ava:224)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer.finalizeIfN
+otAlready(CalculatedVa
+lueContainer.java:195)
+	at org.gradle.interna
+l.model.CalculatedValu
+eContainer.finalizeIfN
+otAlready(CalculatedVa
+lueContainer.java:186)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ArtifactBackedRe
+solvedVariant$Download
+ArtifactFile.run(Artif
+actBackedResolvedVaria
+nt.java:189)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationExecutor$Q
+ueueWorker.execute(Def
+aultBuildOperationExec
+utor.java:161)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.runOperatio
+n(DefaultBuildOperatio
+nQueue.java:272)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.doRunBatch(
+DefaultBuildOperationQ
+ueue.java:253)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.lambda$runB
+atch$0(DefaultBuildOpe
+rationQueue.java:238)
+	at org.gradle.interna
+l.resources.AbstractRe
+sourceLockRegistry.whi
+leDisallowingLockChang
+es(AbstractResourceLoc
+kRegistry.java:50)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.whileDisall
+owingProjectLockChange
+s(DefaultWorkerLeaseSe
+rvice.java:235)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.lambda$runB
+atch$1(DefaultBuildOpe
+rationQueue.java:238)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.runAsWorker
+Thread(DefaultWorkerLe
+aseService.java:125)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.runBatch(De
+faultBuildOperationQue
+ue.java:224)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue$Work
+erRunnable.run(Default
+BuildOperationQueue.ja
+va:192)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationQueue.wait
+ForCompletion(DefaultB
+uildOperationQueue.jav
+a:105)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationExecutor.e
+xecuteInParallel(Defau
+ltBuildOperationExecut
+or.java:106)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationExecutor.r
+unAll(DefaultBuildOper
+ationExecutor.java:65)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ParallelResolveA
+rtifactSet$VisitingSet
+.visit(ParallelResolve
+ArtifactSet.java:66)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ResolvedArtifact
+SetResolver$1.run(Reso
+lvedArtifactSetResolve
+r.java:65)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$1.e
+xecute(DefaultBuildOpe
+rationRunner.java:29)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$1.e
+xecute(DefaultBuildOpe
+rationRunner.java:26)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.run
+(DefaultBuildOperation
+Runner.java:47)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ResolvedArtifact
+SetResolver.visitArtif
+acts(ResolvedArtifactS
+etResolver.java:62)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ResolvedArtifact
+SetResolver.lambda$vis
+itInUnmanagedWorkerThr
+ead$0(ResolvedArtifact
+SetResolver.java:58)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.runAsUnmana
+gedWorkerThread(Defaul
+tWorkerLeaseService.ja
+va:139)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.ResolvedArtifact
+SetResolver.visitInUnm
+anagedWorkerThread(Res
+olvedArtifactSetResolv
+er.java:58)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.DefaultSelectedA
+rtifactSet.visitArtifa
+cts(DefaultSelectedArt
+ifactSet.java:59)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.ResolutionRes
+ultProviderBackedSelec
+tedArtifactSet.visitAr
+tifacts(ResolutionResu
+ltProviderBackedSelect
+edArtifactSet.java:52)
+	at org.gradle.api.int
+ernal.artifacts.ivyser
+vice.resolveengine.art
+ifact.SelectedArtifact
+Set.visitFiles(Selecte
+dArtifactSet.java:34)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.ResolutionBac
+kedFileCollection.visi
+tContents(ResolutionBa
+ckedFileCollection.jav
+a:75)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.artifacts.config
+urations.DefaultConfig
+uration.visitContents(
+DefaultConfiguration.j
+ava:550)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.lambda$vi
+sitContents$0(Composit
+eFileCollection.java:1
+13)
+	at org.gradle.api.int
+ernal.file.collections
+.UnpackingVisitor.add(
+UnpackingVisitor.java:
+67)
+	at org.gradle.api.int
+ernal.file.collections
+.UnpackingVisitor.add(
+UnpackingVisitor.java:
+92)
+	at org.gradle.api.int
+ernal.file.DefaultFile
+CollectionFactory$Reso
+lvingFileCollection.vi
+sitChildren(DefaultFil
+eCollectionFactory.jav
+a:306)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.visitCont
+ents(CompositeFileColl
+ection.java:113)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.lambda$vi
+sitContents$0(Composit
+eFileCollection.java:1
+13)
+	at org.gradle.api.int
+ernal.tasks.PropertyFi
+leCollection.visitChil
+dren(PropertyFileColle
+ction.java:48)
+	at org.gradle.api.int
+ernal.file.CompositeFi
+leCollection.visitCont
+ents(CompositeFileColl
+ection.java:113)
+	at org.gradle.api.int
+ernal.file.AbstractFil
+eCollection.visitStruc
+ture(AbstractFileColle
+ction.java:360)
+	at org.gradle.interna
+l.fingerprint.impl.Def
+aultFileCollectionSnap
+shotter.snapshot(Defau
+ltFileCollectionSnapsh
+otter.java:47)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltInputFingerprinter$I
+nputCollectingVisitor.
+visitInputFileProperty
+(DefaultInputFingerpri
+nter.java:133)
+	at org.gradle.api.int
+ernal.tasks.execution.
+TaskExecution.visitReg
+ularInputs(TaskExecuti
+on.java:324)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltInputFingerprinter.f
+ingerprintInputPropert
+ies(DefaultInputFinger
+printer.java:63)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.captureE
+xecutionStateWithOutpu
+ts(AbstractCaptureStat
+eBeforeExecutionStep.j
+ava:109)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.lambda$c
+aptureExecutionState$0
+(AbstractCaptureStateB
+eforeExecutionStep.jav
+a:74)
+	at org.gradle.interna
+l.execution.steps.Buil
+dOperationStep$1.call(
+BuildOperationStep.jav
+a:37)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.interna
+l.execution.steps.Buil
+dOperationStep.operati
+on(BuildOperationStep.
+java:34)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.captureE
+xecutionState(Abstract
+CaptureStateBeforeExec
+utionStep.java:69)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.execute(
+AbstractCaptureStateBe
+foreExecutionStep.java
+:62)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractCaptureStateBefore
+ExecutionStep.execute(
+AbstractCaptureStateBe
+foreExecutionStep.java
+:43)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+executeWithNonEmptySou
+rces(AbstractSkipEmpty
+WorkStep.java:125)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+execute(AbstractSkipEm
+ptyWorkStep.java:61)
+	at org.gradle.interna
+l.execution.steps.Abst
+ractSkipEmptyWorkStep.
+execute(AbstractSkipEm
+ptyWorkStep.java:36)
+	at org.gradle.interna
+l.execution.steps.lega
+cy.MarkSnapshottingInp
+utsStartedStep.execute
+(MarkSnapshottingInput
+sStartedStep.java:38)
+	at org.gradle.interna
+l.execution.steps.Load
+PreviousExecutionState
+Step.execute(LoadPrevi
+ousExecutionStateStep.
+java:36)
+	at org.gradle.interna
+l.execution.steps.Load
+PreviousExecutionState
+Step.execute(LoadPrevi
+ousExecutionStateStep.
+java:23)
+	at org.gradle.interna
+l.execution.steps.Hand
+leStaleOutputsStep.exe
+cute(HandleStaleOutput
+sStep.java:75)
+	at org.gradle.interna
+l.execution.steps.Hand
+leStaleOutputsStep.exe
+cute(HandleStaleOutput
+sStep.java:41)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.lambda$execute$0(Assi
+gnMutableWorkspaceStep
+.java:35)
+	at org.gradle.api.int
+ernal.tasks.execution.
+TaskExecution$4.withWo
+rkspace(TaskExecution.
+java:289)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.execute(AssignMutable
+WorkspaceStep.java:31)
+	at org.gradle.interna
+l.execution.steps.Assi
+gnMutableWorkspaceStep
+.execute(AssignMutable
+WorkspaceStep.java:22)
+	at org.gradle.interna
+l.execution.steps.Choo
+sePipelineStep.execute
+(ChoosePipelineStep.ja
+va:40)
+	at org.gradle.interna
+l.execution.steps.Choo
+sePipelineStep.execute
+(ChoosePipelineStep.ja
+va:23)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.lambda$execu
+te$2(ExecuteWorkBuildO
+perationFiringStep.jav
+a:67)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.execute(Exec
+uteWorkBuildOperationF
+iringStep.java:67)
+	at org.gradle.interna
+l.execution.steps.Exec
+uteWorkBuildOperationF
+iringStep.execute(Exec
+uteWorkBuildOperationF
+iringStep.java:39)
+	at org.gradle.interna
+l.execution.steps.Iden
+tityCacheStep.execute(
+IdentityCacheStep.java
+:46)
+	at org.gradle.interna
+l.execution.steps.Iden
+tityCacheStep.execute(
+IdentityCacheStep.java
+:34)
+	at org.gradle.interna
+l.execution.steps.Iden
+tifyStep.execute(Ident
+ifyStep.java:48)
+	at org.gradle.interna
+l.execution.steps.Iden
+tifyStep.execute(Ident
+ifyStep.java:35)
+	at org.gradle.interna
+l.execution.impl.Defau
+ltExecutionEngine$1.ex
+ecute(DefaultExecution
+Engine.java:61)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ExecuteActionsTaskExec
+uter.executeIfValid(Ex
+ecuteActionsTaskExecut
+er.java:127)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ExecuteActionsTaskExec
+uter.execute(ExecuteAc
+tionsTaskExecuter.java
+:116)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ProblemsTaskPathTracki
+ngTaskExecuter.execute
+(ProblemsTaskPathTrack
+ingTaskExecuter.java:4
+0)
+	at org.gradle.api.int
+ernal.tasks.execution.
+FinalizePropertiesTask
+Executer.execute(Final
+izePropertiesTaskExecu
+ter.java:46)
+	at org.gradle.api.int
+ernal.tasks.execution.
+ResolveTaskExecutionMo
+deExecuter.execute(Res
+olveTaskExecutionModeE
+xecuter.java:51)
+	at org.gradle.api.int
+ernal.tasks.execution.
+SkipTaskWithNoActionsE
+xecuter.execute(SkipTa
+skWithNoActionsExecute
+r.java:57)
+	at org.gradle.api.int
+ernal.tasks.execution.
+SkipOnlyIfTaskExecuter
+.execute(SkipOnlyIfTas
+kExecuter.java:74)
+	at org.gradle.api.int
+ernal.tasks.execution.
+CatchExceptionTaskExec
+uter.execute(CatchExce
+ptionTaskExecuter.java
+:36)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.executeTask(EventF
+iringTaskExecuter.java
+:77)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.call(EventFiringTa
+skExecuter.java:55)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r$1.call(EventFiringTa
+skExecuter.java:52)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.api.int
+ernal.tasks.execution.
+EventFiringTaskExecute
+r.execute(EventFiringT
+askExecuter.java:52)
+	at org.gradle.executi
+on.plan.LocalTaskNodeE
+xecutor.execute(LocalT
+askNodeExecutor.java:4
+2)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Invok
+eNodeExecutorsAction.e
+xecute(DefaultTaskExec
+utionGraph.java:331)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Invok
+eNodeExecutorsAction.e
+xecute(DefaultTaskExec
+utionGraph.java:318)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.lambda$execute
+$0(DefaultTaskExecutio
+nGraph.java:314)
+	at org.gradle.interna
+l.operations.CurrentBu
+ildOperationRef.with(C
+urrentBuildOperationRe
+f.java:85)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.execute(Defaul
+tTaskExecutionGraph.ja
+va:314)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph$Build
+OperationAwareExecutio
+nAction.execute(Defaul
+tTaskExecutionGraph.ja
+va:303)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor$ExecutorWorker.e
+xecute(DefaultPlanExec
+utor.java:459)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor$ExecutorWorker.r
+un(DefaultPlanExecutor
+.java:376)
+	at org.gradle.executi
+on.plan.DefaultPlanExe
+cutor.process(DefaultP
+lanExecutor.java:111)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph.execu
+teWithServices(Default
+TaskExecutionGraph.jav
+a:138)
+	at org.gradle.executi
+on.taskgraph.DefaultTa
+skExecutionGraph.execu
+te(DefaultTaskExecutio
+nGraph.java:123)
+	at org.gradle.executi
+on.SelectedTaskExecuti
+onAction.execute(Selec
+tedTaskExecutionAction
+.java:35)
+	at org.gradle.executi
+on.DryRunBuildExecutio
+nAction.execute(DryRun
+BuildExecutionAction.j
+ava:51)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor$E
+xecuteTasks.call(Build
+OperationFiringBuildWo
+rkerExecutor.java:54)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor$E
+xecuteTasks.call(Build
+OperationFiringBuildWo
+rkerExecutor.java:43)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:209)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$Cal
+lableBuildOperationWor
+ker.execute(DefaultBui
+ldOperationRunner.java
+:204)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:66)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner$2.e
+xecute(DefaultBuildOpe
+rationRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:166)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.exe
+cute(DefaultBuildOpera
+tionRunner.java:59)
+	at org.gradle.interna
+l.operations.DefaultBu
+ildOperationRunner.cal
+l(DefaultBuildOperatio
+nRunner.java:53)
+	at org.gradle.executi
+on.BuildOperationFirin
+gBuildWorkerExecutor.e
+xecute(BuildOperationF
+iringBuildWorkerExecut
+or.java:40)
+	at org.gradle.interna
+l.build.DefaultBuildLi
+fecycleController.lamb
+da$executeTasks$10(Def
+aultBuildLifecycleCont
+roller.java:313)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.doTransiti
+on(StateTransitionCont
+roller.java:266)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.lambda$try
+Transition$8(StateTran
+sitionController.java:
+177)
+	at org.gradle.interna
+l.work.DefaultSynchron
+izer.withLock(DefaultS
+ynchronizer.java:46)
+	at org.gradle.interna
+l.model.StateTransitio
+nController.tryTransit
+ion(StateTransitionCon
+troller.java:177)
+	at org.gradle.interna
+l.build.DefaultBuildLi
+fecycleController.exec
+uteTasks(DefaultBuildL
+ifecycleController.jav
+a:304)
+	at org.gradle.interna
+l.build.DefaultBuildWo
+rkGraphController$Defa
+ultBuildWorkGraph.runW
+ork(DefaultBuildWorkGr
+aphController.java:220
+)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.withLocks(D
+efaultWorkerLeaseServi
+ce.java:263)
+	at org.gradle.interna
+l.work.DefaultWorkerLe
+aseService.runAsWorker
+Thread(DefaultWorkerLe
+aseService.java:127)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController.doRun(Def
+aultBuildController.ja
+va:181)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController.access$00
+0(DefaultBuildControll
+er.java:50)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController$BuildOpRu
+nnable.lambda$run$0(De
+faultBuildController.j
+ava:198)
+	at org.gradle.interna
+l.operations.CurrentBu
+ildOperationRef.with(C
+urrentBuildOperationRe
+f.java:85)
+	at org.gradle.composi
+te.internal.DefaultBui
+ldController$BuildOpRu
+nnable.run(DefaultBuil
+dController.java:198)
+	at org.gradle.interna
+l.concurrent.ExecutorP
+olicy$CatchAndRecordFa
+ilures.onExecute(Execu
+torPolicy.java:64)
+	at org.gradle.interna
+l.concurrent.AbstractM
+anagedExecutor$1.run(A
+bstractManagedExecutor
+.java:48)
+Compile failed in findRecomp. See log for more details
+C:\Users\lione\git\min
+emod\Forge MDK\src\mai
+n\java\com\example\exa
+mplemod\entity\GlitchE
+ntity.java:113: 
+error: cannot find 
+symbol
+                      
+  this.level().playSou
+nd(null, nearest.block
+Position(), SoundEvent
+s.CAVE_AMBIENT,
+                      
+                      
+                      
+                      
+ ^
+  symbol:   variable 
+CAVE_AMBIENT
+  location: class 
+SoundEvents
+C:\Users\lione\git\min
+emod\Forge MDK\src\mai
+n\java\com\example\exa
+mplemod\entity\GlitchE
+ntity.java:117: 
+error: no suitable 
+method found for playS
+ound(<null>,BlockPos,R
+eference<SoundEvent>,S
+oundSource,float,float
+)
+                      
+  this.level().playSou
+nd(null, nearest.block
+Position(), SoundEvent
+s.MUSIC_DISC_11,
+                      
+              ^
+    method Level.playS
+ound(Entity,BlockPos,S
+oundEvent,SoundSource,
+float,float) is not 
+applicable
+      (argument 
+mismatch; 
+Reference<SoundEvent> 
+cannot be converted 
+to SoundEvent)
+    method Level.playS
+ound(Player,BlockPos,S
+oundEvent,SoundSource,
+float,float) is not 
+applicable
+      (argument 
+mismatch; 
+Reference<SoundEvent> 
+cannot be converted 
+to SoundEvent)
+    method Level.playS
+ound(Player,double,dou
+ble,double,SoundEvent,
+SoundSource) is not 
+applicable
+      (argument 
+mismatch; BlockPos 
+cannot be converted 
+to double)
+    method Level.playS
+ound(Player,Entity,Sou
+ndEvent,SoundSource,fl
+oat,float) is not 
+applicable
+      (argument 
+mismatch; BlockPos 
+cannot be converted 
+to Entity)
+Note: C:\Users\lione\g
+it\minemod\Forge MDK\s
+rc\main\java\com\examp
+le\examplemod\item\Gli
+tchSpawnEggItem.java 
+uses or overrides a 
+deprecated API.
+Note: Recompile with 
+-Xlint:deprecation 
+for details.
+Note: Some messages 
+have been simplified; 
+recompile with 
+-Xdiags:verbose to 
+get full output
+2 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/lione/git/minemod/Forge%20MDK/build/reports/problems/problems-report.html
+
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':compileJava'.
+> Compilation failed; 
+see the compiler 
+output below.
+  C:\Users\lione\git\m
+inemod\Forge MDK\src\m
+ain\java\com\example\e
+xamplemod\entity\Glitc
+hEntity.java:113: 
+error: cannot find 
+symbol
+                      
+    this.level().playS
+ound(null, nearest.blo
+ckPosition(), SoundEve
+nts.CAVE_AMBIENT,
+                      
+                      
+                      
+                      
+   ^
+    symbol:   
+variable CAVE_AMBIENT
+    location: class 
+SoundEvents
+  C:\Users\lione\git\m
+inemod\Forge MDK\src\m
+ain\java\com\example\e
+xamplemod\entity\Glitc
+hEntity.java:117: 
+error: no suitable 
+method found for playS
+ound(<null>,BlockPos,R
+eference<SoundEvent>,S
+oundSource,float,float
+)
+                      
+    this.level().playS
+ound(null, nearest.blo
+ckPosition(), SoundEve
+nts.MUSIC_DISC_11,
+                      
+                ^
+      method Level.pla
+ySound(Entity,BlockPos
+,SoundEvent,SoundSourc
+e,float,float) is not 
+applicable
+        (argument 
+mismatch; 
+Reference<SoundEvent> 
+cannot be converted 
+to SoundEvent)
+      method Level.pla
+ySound(Player,BlockPos
+,SoundEvent,SoundSourc
+e,float,float) is not 
+applicable
+        (argument 
+mismatch; 
+Reference<SoundEvent> 
+cannot be converted 
+to SoundEvent)
+      method Level.pla
+ySound(Player,double,d
+ouble,double,SoundEven
+t,SoundSource) is not 
+applicable
+        (argument 
+mismatch; BlockPos 
+cannot be converted 
+to double)
+      method Level.pla
+ySound(Player,Entity,S
+oundEvent,SoundSource,
+float,float) is not 
+applicable
+        (argument 
+mismatch; BlockPos 
+cannot be converted 
+to Entity)
+  Note: C:\Users\lione
+\git\minemod\Forge MDK
+\src\main\java\com\exa
+mple\examplemod\item\G
+litchSpawnEggItem.java
+ uses or overrides a 
+deprecated API.
+  Note: Recompile 
+with 
+-Xlint:deprecation 
+for details.
+  Note: Some messages 
+have been simplified; 
+recompile with 
+-Xdiags:verbose to 
+get full output
+  2 errors
+
+* Try:
+> Check your code and 
+dependencies to fix 
+the compilation 
+error(s)
+> Run with --scan to 
+get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+1 actionable task: 1 executed
+
+BUILD FAILED in 21s

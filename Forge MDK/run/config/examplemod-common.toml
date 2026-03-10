@@ -1,9 +1,13 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
-#A magic number
-#Range: > 0
-magicNumber = 42
-#What you want the introduction message to be for the magic number
-magicNumberIntroduction = "The magic number is... "
-#A list of items to log on common setup.
-items = ["minecraft:iron_ingot"]
+["Horror Settings"]
+	#Enable loud jumpscare visual and audio cues.
+	enableJumpscares = true
+	#Frequency of Glitch attacks. Higher number means it spawns MORE often.
+	#Range: 1 ~ 100
+	glitchSpawnRate = 50
+	#Chance (1 in X) per tick for a Clue Sign to spawn when afflicted by Dread. Lower means MORE frequent.
+	#Range: 20 ~ 10000
+	clueSignChance = 200
+	#Allow the Fake OS Permission screen to randomly appear.
+	allowFakePermissions = false
+	#Allow blocks around the Glitch to become corrupted.
+	enableTileGlitches = true
