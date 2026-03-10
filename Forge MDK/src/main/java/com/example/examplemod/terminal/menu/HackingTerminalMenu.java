@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
  */
 public class HackingTerminalMenu extends AbstractContainerMenu {
     private final ContainerLevelAccess access;
+    private final BlockPos terminalPos;
 
     public HackingTerminalMenu(int containerId, Inventory playerInventory, FriendlyByteBuf data) {
         this(containerId, playerInventory, data.readBlockPos());
@@ -21,6 +22,7 @@ public class HackingTerminalMenu extends AbstractContainerMenu {
 
     public HackingTerminalMenu(int containerId, Inventory playerInventory, BlockPos terminalPos) {
         super(ExampleMod.HACKING_TERMINAL_MENU.get(), containerId);
+        this.terminalPos = terminalPos;
         this.access = ContainerLevelAccess.create(playerInventory.player.level(), terminalPos);
     }
 
@@ -32,5 +34,9 @@ public class HackingTerminalMenu extends AbstractContainerMenu {
     @Override
     public ItemStack quickMoveStack(Player player, int index) {
         return ItemStack.EMPTY;
+    }
+
+    public BlockPos terminalPos() {
+        return terminalPos;
     }
 }

@@ -5,11 +5,15 @@ import com.example.examplemod.client.GlitchRenderer;
 import com.example.examplemod.client.screen.HackingTerminalScreen;
 import com.example.examplemod.entity.GlitchEntity;
 import com.example.examplemod.terminal.block.HackingTerminalBlock;
+import com.example.examplemod.terminal.block.HackingTerminalBlockEntity;
 import com.example.examplemod.terminal.menu.HackingTerminalMenu;
+import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -20,6 +24,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,6 +34,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -57,6 +63,7 @@ public class ExampleMod {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MODID);
     public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(ForgeRegistries.MENU_TYPES, MODID);
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
 
     // === HORROR MOD CONTENT ===
 
@@ -88,6 +95,9 @@ public class ExampleMod {
     public static final RegistryObject<MenuType<HackingTerminalMenu>> HACKING_TERMINAL_MENU =
             MENU_TYPES.register("hacking_terminal",
                     () -> IForgeMenuType.create(HackingTerminalMenu::new));
+    public static final RegistryObject<BlockEntityType<HackingTerminalBlockEntity>> HACKING_TERMINAL_BLOCK_ENTITY =
+            BLOCK_ENTITY_TYPES.register("hacking_terminal",
+                    () -> BlockEntityType.Builder.of(HackingTerminalBlockEntity::new, HACKING_TERMINAL_BLOCK.get()).build(null));
 
     // Horror creative tab
     public static final RegistryObject<CreativeModeTab> HORROR_TAB = CREATIVE_MODE_TABS.register("horror_tab",
@@ -114,6 +124,7 @@ public class ExampleMod {
         CREATIVE_MODE_TABS.register(modEventBus);
         ENTITY_TYPES.register(modEventBus);
         MENU_TYPES.register(modEventBus);
+        BLOCK_ENTITY_TYPES.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -149,6 +160,26 @@ public class ExampleMod {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
         LOGGER.info("Corruption spreads. The Glitch watches.");
+    }
+
+    @SubscribeEvent
+    public void onRegisterCommands(RegisterCommandsEvent event) {
+        event.getDispatcher().register(
+                Commands.literal("examplemod_terminal")
+                        .then(Commands.literal("submit")
+                                .then(Commands.argument("pos", BlockPosArgument.blockPos())
+                                        .then(Commands.argument("command", StringArgumentType.greedyString())
+                                                .executes(context -> {
+                                                    BlockPos pos = BlockPosArgument.getLoadedBlockPos(context, "pos");
+                                                    String command = StringArgumentType.getString(context, "command");
+                                                    if (context.getSource().getLevel().getBlockEntity(pos) instanceof HackingTerminalBlockEntity terminalBlockEntity
+                                                            && context.getSource().getPlayer() != null) {
+                                                        terminalBlockEntity.submitCommand(context.getSource().getPlayer(), command);
+                                                        return 1;
+                                                    }
+                                                    return 0;
+                                                }))))
+        );
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

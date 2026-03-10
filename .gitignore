@@ -56,3 +56,4 @@ ehthumbs.db
 # Local-only machine config
 # ---------------------------
 local.properties
+**/config/examplemod-terminal.json
