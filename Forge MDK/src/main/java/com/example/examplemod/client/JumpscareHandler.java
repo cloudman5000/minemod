@@ -25,8 +25,9 @@ public class JumpscareHandler {
 
     @SubscribeEvent
     public static void onPlayerDeath(LivingDeathEvent event) {
-        // Trigger only on client
-        if (!event.getEntity().level().isClientSide)
+        // Trigger only on client and if configured to allow loud jumpscares
+        if (!event.getEntity().level().isClientSide
+                || !com.example.examplemod.config.ExampleModConfig.ENABLE_JUMPSCARES.get())
             return;
 
         if (event.getEntity() instanceof Player player) {

@@ -2,7 +2,9 @@ package com.example.examplemod;
 
 import com.example.examplemod.block.CorruptingBlock;
 import com.example.examplemod.client.GlitchRenderer;
+import com.example.examplemod.client.SignerRenderer;
 import com.example.examplemod.client.screen.HackingTerminalScreen;
+import com.example.examplemod.effect.ModEffects;
 import com.example.examplemod.entity.GlitchEntity;
 import com.example.examplemod.terminal.block.HackingTerminalBlock;
 import com.example.examplemod.terminal.menu.HackingTerminalMenu;
@@ -48,121 +50,203 @@ import org.slf4j.Logger;
 @Mod(ExampleMod.MODID)
 public class ExampleMod {
 
-    public static final String MODID = "examplemod";
-    private static final Logger LOGGER = LogUtils.getLogger();
+        public static final String MODID = "examplemod";
+        private static final Logger LOGGER = LogUtils.getLogger();
 
-    // Blocks
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
-            .create(Registries.CREATIVE_MODE_TAB, MODID);
-    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister
-            .create(ForgeRegistries.ENTITY_TYPES, MODID);
-    public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(ForgeRegistries.MENU_TYPES,
-            MODID);
+        // Blocks
+        public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+        public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+        public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
+                        .create(Registries.CREATIVE_MODE_TAB, MODID);
+        public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister
+                        .create(ForgeRegistries.ENTITY_TYPES, MODID);
+        public static final DeferredRegister<MenuType<?>> MENU_TYPES = DeferredRegister.create(
+                        ForgeRegistries.MENU_TYPES,
+                        MODID);
 
-    // === HORROR MOD CONTENT ===
+        // === HORROR MOD CONTENT ===
 
-    // The Corrupting Block - spreads like a virus, consumes the world
-    public static final RegistryObject<Block> CORRUPTING_BLOCK = BLOCKS.register("corrupting_block",
-            CorruptingBlock::new);
-    public static final RegistryObject<Item> CORRUPTING_BLOCK_ITEM = ITEMS.register("corrupting_block",
-            () -> new BlockItem(CORRUPTING_BLOCK.get(), new Item.Properties()));
+        // The Corrupting Block - spreads like a virus, consumes the world
+        public static final RegistryObject<Block> CORRUPTING_BLOCK = BLOCKS.register("corrupting_block",
+                        CorruptingBlock::new);
+        public static final RegistryObject<Item> CORRUPTING_BLOCK_ITEM = ITEMS.register("corrupting_block",
+                        () -> new BlockItem(CORRUPTING_BLOCK.get(), new Item.Properties()));
 
-    // The Glitch - an entity that shouldn't exist. Teleports. Watches. Hunts.
-    public static final RegistryObject<EntityType<GlitchEntity>> GLITCH = ENTITY_TYPES.register("glitch",
-            () -> EntityType.Builder.<GlitchEntity>of(GlitchEntity::new, MobCategory.MONSTER)
-                    .sized(0.6f, 1.95f)
-                    .clientTrackingRange(8)
-                    .build("glitch"));
+        // The Glitch - an entity that shouldn't exist. Teleports. Watches. Hunts.
+        public static final RegistryObject<EntityType<GlitchEntity>> GLITCH = ENTITY_TYPES.register("glitch",
+                        () -> EntityType.Builder.<GlitchEntity>of(GlitchEntity::new, MobCategory.MONSTER)
+                                        .sized(0.6f, 1.95f)
+                                        .clientTrackingRange(8)
+                                        .build("glitch"));
 
-    public static final RegistryObject<Item> GLITCH_SPAWN_EGG = ITEMS.register("glitch_spawn_egg",
-            () -> new ForgeSpawnEggItem(GLITCH, 0x0a0a0f, 0x4aff15, new Item.Properties()));
+        public static final RegistryObject<Item> GLITCH_SPAWN_EGG = ITEMS.register("glitch_spawn_egg",
+                        () -> new ForgeSpawnEggItem(GLITCH, 0x0a0a0f, 0x4aff15, new Item.Properties()));
 
-    // Hacking terminal block for restoring reality.
-    public static final RegistryObject<Block> HACKING_TERMINAL_BLOCK = BLOCKS.register("hacking_terminal",
-            () -> new HackingTerminalBlock(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.METAL)
-                    .strength(4.0f, 10.0f)
-                    .sound(SoundType.METAL)));
-    public static final RegistryObject<Item> HACKING_TERMINAL_ITEM = ITEMS.register("hacking_terminal",
-            () -> new BlockItem(HACKING_TERMINAL_BLOCK.get(), new Item.Properties()));
+        public static final RegistryObject<EntityType<com.example.examplemod.entity.SignerEntity>> SIGNER = ENTITY_TYPES
+                        .register("signer",
+                                        () -> EntityType.Builder.<com.example.examplemod.entity.SignerEntity>of(
+                                                        com.example.examplemod.entity.SignerEntity::new,
+                                                        MobCategory.MONSTER)
+                                                        .sized(0.6f, 1.95f)
+                                                        .clientTrackingRange(8)
+                                                        .build("signer"));
 
-    public static final RegistryObject<MenuType<HackingTerminalMenu>> HACKING_TERMINAL_MENU = MENU_TYPES.register(
-            "hacking_terminal",
-            () -> IForgeMenuType.create(HackingTerminalMenu::new));
+        public static final RegistryObject<EntityType<com.example.examplemod.entity.CrawlerEntity>> CRAWLER = ENTITY_TYPES
+                        .register("crawler",
+                                        () -> EntityType.Builder.<com.example.examplemod.entity.CrawlerEntity>of(
+                                                        com.example.examplemod.entity.CrawlerEntity::new,
+                                                        MobCategory.MONSTER)
+                                                        .sized(0.4f, 0.3f) // Very small hitbox, like a silverfish
+                                                        .clientTrackingRange(8)
+                                                        .build("crawler"));
 
-    // Horror creative tab
-    public static final RegistryObject<CreativeModeTab> HORROR_TAB = CREATIVE_MODE_TABS.register("horror_tab",
-            () -> CreativeModeTab.builder()
-                    .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
-                    .icon(() -> CORRUPTING_BLOCK_ITEM.get().getDefaultInstance())
-                    .title(net.minecraft.network.chat.Component.translatable("itemGroup.examplemod.horror_tab"))
-                    .displayItems((parameters, output) -> {
-                        output.accept(CORRUPTING_BLOCK_ITEM.get());
-                        output.accept(HACKING_TERMINAL_ITEM.get());
-                        output.accept(GLITCH_SPAWN_EGG.get());
-                    })
-                    .build());
+        public static final RegistryObject<EntityType<com.example.examplemod.entity.MimicEntity>> MIMIC = ENTITY_TYPES
+                        .register("mimic",
+                                        () -> EntityType.Builder.<com.example.examplemod.entity.MimicEntity>of(
+                                                        com.example.examplemod.entity.MimicEntity::new,
+                                                        MobCategory.MONSTER)
+                                                        .sized(0.9f, 0.9f) // Pig size
+                                                        .clientTrackingRange(8)
+                                                        .build("mimic"));
 
-    public ExampleMod(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+        // Hacking terminal block for restoring reality.
+        public static final RegistryObject<Block> HACKING_TERMINAL_BLOCK = BLOCKS.register("hacking_terminal",
+                        () -> new HackingTerminalBlock(BlockBehaviour.Properties.of()
+                                        .mapColor(MapColor.METAL)
+                                        .strength(4.0f, 10.0f)
+                                        .sound(SoundType.METAL)));
+        public static final RegistryObject<Item> HACKING_TERMINAL_ITEM = ITEMS.register("hacking_terminal",
+                        () -> new BlockItem(HACKING_TERMINAL_BLOCK.get(), new Item.Properties()));
 
-        modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::onEntityAttributes);
-        modEventBus.addListener(this::onSpawnPlacementRegister);
+        public static final RegistryObject<MenuType<HackingTerminalMenu>> HACKING_TERMINAL_MENU = MENU_TYPES.register(
+                        "hacking_terminal",
+                        () -> IForgeMenuType.create(HackingTerminalMenu::new));
 
-        BLOCKS.register(modEventBus);
-        ITEMS.register(modEventBus);
-        CREATIVE_MODE_TABS.register(modEventBus);
-        ENTITY_TYPES.register(modEventBus);
-        MENU_TYPES.register(modEventBus);
+        public static final RegistryObject<Block> ESCAPE_RIFT_BLOCK = BLOCKS.register("escape_rift",
+                        () -> new com.example.examplemod.block.EscapeRiftBlock(BlockBehaviour.Properties.of()
+                                        .mapColor(MapColor.COLOR_PURPLE)
+                                        .strength(-1.0f, 3600000.0f) // Unbreakable
+                                        .sound(SoundType.AMETHYST)
+                                        .lightLevel((state) -> 10)
+                                        .noOcclusion()));
+        public static final RegistryObject<Item> ESCAPE_RIFT_ITEM = ITEMS.register("escape_rift",
+                        () -> new BlockItem(ESCAPE_RIFT_BLOCK.get(), new Item.Properties()));
 
-        MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
+        // Horror creative tab
+        public static final RegistryObject<CreativeModeTab> HORROR_TAB = CREATIVE_MODE_TABS.register("horror_tab",
+                        () -> CreativeModeTab.builder()
+                                        .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
+                                        .icon(() -> CORRUPTING_BLOCK_ITEM.get().getDefaultInstance())
+                                        .title(net.minecraft.network.chat.Component
+                                                        .translatable("itemGroup.examplemod.horror_tab"))
+                                        .displayItems((parameters, output) -> {
+                                                output.accept(CORRUPTING_BLOCK_ITEM.get());
+                                                output.accept(HACKING_TERMINAL_ITEM.get());
+                                                output.accept(ESCAPE_RIFT_ITEM.get());
+                                                output.accept(GLITCH_SPAWN_EGG.get());
+                                        })
+                                        .build());
 
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-    }
+        public ExampleMod(FMLJavaModLoadingContext context) {
+                IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-        LOGGER.info("THE GLITCH AWAITS...");
-    }
+                // Register Config
+                net.minecraftforge.fml.ModLoadingContext.get().registerConfig(
+                                net.minecraftforge.fml.config.ModConfig.Type.COMMON,
+                                com.example.examplemod.config.ExampleModConfig.SPEC);
 
-    private void onSpawnPlacementRegister(SpawnPlacementRegisterEvent event) {
-        event.register(
-                GLITCH.get(),
-                SpawnPlacementTypes.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                GlitchEntity::checkGlitchSpawnRules,
-                SpawnPlacementRegisterEvent.Operation.REPLACE);
-    }
+                modEventBus.addListener(this::commonSetup);
+                modEventBus.addListener(this::onEntityAttributes);
+                modEventBus.addListener(this::onSpawnPlacementRegister);
 
-    private void onEntityAttributes(EntityAttributeCreationEvent event) {
-        event.put(GLITCH.get(), GlitchEntity.createAttributes().build());
-    }
+                ModEffects.register(modEventBus);
+                BLOCKS.register(modEventBus);
+                ITEMS.register(modEventBus);
+                CREATIVE_MODE_TABS.register(modEventBus);
+                ENTITY_TYPES.register(modEventBus);
+                MENU_TYPES.register(modEventBus);
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(CORRUPTING_BLOCK_ITEM);
-            event.accept(HACKING_TERMINAL_ITEM);
+                MinecraftForge.EVENT_BUS.register(this);
+                modEventBus.addListener(this::addCreative);
         }
-    }
 
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-        LOGGER.info("Corruption spreads. The Glitch watches.");
-    }
+        private void commonSetup(final FMLCommonSetupEvent event) {
+                LOGGER.info("THE GLITCH AWAITS...");
+        }
 
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
+        private void onSpawnPlacementRegister(SpawnPlacementRegisterEvent event) {
+                event.register(
+                                GLITCH.get(),
+                                SpawnPlacementTypes.ON_GROUND,
+                                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                                GlitchEntity::checkGlitchSpawnRules,
+                                SpawnPlacementRegisterEvent.Operation.REPLACE);
+                event.register(
+                                MIMIC.get(),
+                                SpawnPlacementTypes.ON_GROUND,
+                                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                                net.minecraft.world.entity.monster.Monster::checkMonsterSpawnRules,
+                                SpawnPlacementRegisterEvent.Operation.REPLACE);
+        }
+
+        private void onEntityAttributes(net.minecraftforge.event.entity.EntityAttributeCreationEvent event) {
+                event.put(GLITCH.get(), GlitchEntity.createAttributes().build());
+                event.put(SIGNER.get(), com.example.examplemod.entity.SignerEntity.createAttributes().build());
+                event.put(CRAWLER.get(), com.example.examplemod.entity.CrawlerEntity.createAttributes().build());
+                event.put(MIMIC.get(), com.example.examplemod.entity.MimicEntity.createAttributes().build());
+        }
+
+        private void addCreative(BuildCreativeModeTabContentsEvent event) {
+                if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+                        event.accept(CORRUPTING_BLOCK_ITEM);
+                        event.accept(HACKING_TERMINAL_ITEM);
+                }
+        }
 
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            event.enqueueWork(() -> {
-                EntityRenderers.register(GLITCH.get(), GlitchRenderer::new);
-                MenuScreens.register(HACKING_TERMINAL_MENU.get(), HackingTerminalScreen::new);
-            });
-            LOGGER.info("You are being watched.");
+        public void onServerStarting(ServerStartingEvent event) {
+                LOGGER.info("Corruption spreads. The Glitch watches.");
         }
-    }
+
+        @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+        public static class ClientModEvents {
+
+                @SubscribeEvent
+                public static void onClientSetup(FMLClientSetupEvent event) {
+                        event.enqueueWork(() -> {
+                                EntityRenderers.register(GLITCH.get(), GlitchRenderer::new);
+                                EntityRenderers.register(SIGNER.get(), SignerRenderer::new);
+                                EntityRenderers.register(CRAWLER.get(),
+                                                com.example.examplemod.client.CrawlerRenderer::new);
+                                EntityRenderers.register(MIMIC.get(), com.example.examplemod.client.MimicRenderer::new);
+                                MenuScreens.register(HACKING_TERMINAL_MENU.get(), HackingTerminalScreen::new);
+                        });
+                        LOGGER.info("You are being watched.");
+                }
+
+                @SubscribeEvent
+                public static void onRegisterLayers(
+                                net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions event) {
+                        event.registerLayerDefinition(com.example.examplemod.client.CrawlerModel.LAYER_LOCATION,
+                                        net.minecraft.client.model.SilverfishModel::createBodyLayer);
+                }
+        }
+
+        @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+        public static class ClientForgeEvents {
+                @SubscribeEvent
+                public static void onScreenInit(net.minecraftforge.client.event.ScreenEvent.Init.Post event) {
+                        if (event.getScreen().getTitle().getString().equals("Options")) {
+                                // Add button to the top right
+                                event.addListener(net.minecraft.client.gui.components.Button.builder(
+                                                net.minecraft.network.chat.Component.literal("Horror Mod Settings"),
+                                                button -> Minecraft.getInstance().setScreen(
+                                                                new com.example.examplemod.client.screen.HorrorConfigScreen(
+                                                                                event.getScreen())))
+                                                .bounds(event.getScreen().width / 2 - 155,
+                                                                event.getScreen().height / 6 - 12 + 24 * 6, 310, 20)
+                                                .build());
+                        }
+                }
+        }
 }

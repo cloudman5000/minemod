@@ -1,0 +1,949 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 21.0.9, JVM: 21.0.9+10-LTS (Eclipse Adoptium), Arch: amd64
+
+> Task :compileJava
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:34: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.1;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:35: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.2;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:36: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.3;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: '(' or '[' expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                       ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:58: error: <identifier> expected
+        new 2(StrongholdPieces.PortalRoom.class, 20, 1)
+                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:60: error: unnamed classes are a preview feature and are disabled by default.
+    private static List<StrongholdPieces.PieceWeight> currentPieces;
+                   ^
+  (use --enable-preview to enable unnamed classes)
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1786: error: class, interface, enum, or record expected
+}
+^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1: error: unnamed class should not have package declaration
+package net.minecraft.world.level.levelgen.structure.structures;
+^
+41 errors
+org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:34: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.1;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:35: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.2;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:36: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.3;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: '(' or '[' expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                       ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:58: error: <identifier> expected
+        new 2(StrongholdPieces.PortalRoom.class, 20, 1)
+                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:60: error: unnamed classes are a preview feature and are disabled by default.
+    private static List<StrongholdPieces.PieceWeight> currentPieces;
+                   ^
+  (use --enable-preview to enable unnamed classes)
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1786: error: class, interface, enum, or record expected
+}
+^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1: error: unnamed class should not have package declaration
+package net.minecraft.world.level.levelgen.structure.structures;
+^
+41 errors
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:84)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:205)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:32)
+	at net.minecraftforge.gradle.userdev.tasks.HackyJavaCompile.doHackyCompile(HackyJavaCompile.java:45)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.compileJava(MinecraftUserRepo.java:1411)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findRecomp(MinecraftUserRepo.java:1266)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findRaw(MinecraftUserRepo.java:597)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findFile(MinecraftUserRepo.java:461)
+	at net.minecraftforge.gradle.common.util.BaseRepo.getArtifact(BaseRepo.java:67)
+	at net.minecraftforge.gradle.common.util.BaseRepo.getArtifact(BaseRepo.java:27)
+	at net.minecraftforge.gradle.common.util.BaseRepo$Builder.lambda$null$0(BaseRepo.java:120)
+	at net.minecraftforge.gradle.common.util.BaseRepo$Builder.lambda$attach$2(BaseRepo.java:122)
+	at net.minecraftforge.artifactural.base.repository.ArtifactProviderBuilder$Complete.getArtifact(ArtifactProviderBuilder.java:92)
+	at net.minecraftforge.artifactural.base.repository.SimpleRepository.getArtifact(SimpleRepository.java:41)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.findArtifact(GradleRepositoryAdapter.java:388)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.resource(GradleRepositoryAdapter.java:367)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.resource(GradleRepositoryAdapter.java:333)
+	at org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver.staticResourceExists(DefaultExternalResourceArtifactResolver.java:79)
+	at org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver.artifactExists(DefaultExternalResourceArtifactResolver.java:67)
+	at org.gradle.api.internal.artifacts.repositories.DefaultMavenLocalArtifactRepository$MavenLocalMetadataValidator.isUsableModule(DefaultMavenLocalArtifactRepository.java:123)
+	at org.gradle.api.internal.artifacts.repositories.metadata.DefaultMavenPomMetadataSource.parseMetaDataFromResource(DefaultMavenPomMetadataSource.java:76)
+	at org.gradle.api.internal.artifacts.repositories.metadata.AbstractRepositoryMetadataSource.parseMetaDataFromArtifact(AbstractRepositoryMetadataSource.java:82)
+	at org.gradle.api.internal.artifacts.repositories.metadata.AbstractRepositoryMetadataSource.create(AbstractRepositoryMetadataSource.java:69)
+	at org.gradle.api.internal.artifacts.repositories.metadata.DefaultMavenPomMetadataSource.create(DefaultMavenPomMetadataSource.java:40)
+	at org.gradle.api.internal.artifacts.repositories.metadata.RedirectingGradleMetadataModuleMetadataSource.create(RedirectingGradleMetadataModuleMetadataSource.java:52)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver.resolveStaticDependency(ExternalResourceResolver.java:235)
+	at org.gradle.api.internal.artifacts.repositories.resolver.MavenResolver.doResolveComponentMetaData(MavenResolver.java:108)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver$RemoteRepositoryAccess.resolveComponentMetaData(ExternalResourceResolver.java:427)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$1$1.resolveComponentMetaData(GradleRepositoryAdapter.java:211)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository$ResolveAndCacheRepositoryAccess.resolveComponentMetaDataAndCache(CachingModuleComponentRepository.java:396)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository$ResolveAndCacheRepositoryAccess.resolveComponentMetaData(CachingModuleComponentRepository.java:390)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LocalModuleComponentRepository$LocalAccess.resolveComponentMetaData(LocalModuleComponentRepository.java:75)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.lambda$resolveComponentMetaData$5(ErrorHandlingModuleComponentRepository.java:150)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.lambda$tryResolveAndMaybeDisable$15(ErrorHandlingModuleComponentRepository.java:220)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.tryResolveAndMaybeDisable(ErrorHandlingModuleComponentRepository.java:236)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.tryResolveAndMaybeDisable(ErrorHandlingModuleComponentRepository.java:219)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.performOperationWithRetries(ErrorHandlingModuleComponentRepository.java:203)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.resolveComponentMetaData(ErrorHandlingModuleComponentRepository.java:149)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.FilteredModuleComponentRepository$FilteringAccess.lambda$resolveComponentMetaData$2(FilteredModuleComponentRepository.java:106)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.FilteredModuleComponentRepository$FilteringAccess.whenModulePresent(FilteredModuleComponentRepository.java:133)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.FilteredModuleComponentRepository$FilteringAccess.resolveComponentMetaData(FilteredModuleComponentRepository.java:105)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ComponentMetaDataResolveState.process(ComponentMetaDataResolveState.java:70)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ComponentMetaDataResolveState.resolve(ComponentMetaDataResolveState.java:49)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver.findBestMatch(RepositoryChainComponentMetaDataResolver.java:165)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver.findBestMatch(RepositoryChainComponentMetaDataResolver.java:145)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver.resolveModule(RepositoryChainComponentMetaDataResolver.java:115)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver.lambda$createValueContainerFor$1(RepositoryChainComponentMetaDataResolver.java:85)
+	at org.gradle.internal.model.CalculatedValueContainerFactory$SupplierBackedCalculator.calculateValue(CalculatedValueContainerFactory.java:69)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.lambda$attachValue$0(CalculatedValueContainer.java:229)
+	at org.gradle.internal.Try.ofFailable(Try.java:50)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.attachValue(CalculatedValueContainer.java:224)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:195)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:186)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver.resolve(RepositoryChainComponentMetaDataResolver.java:77)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.ComponentResolversChain$ComponentMetaDataResolverChain.resolve(ComponentResolversChain.java:90)
+	at org.gradle.api.internal.artifacts.ivyservice.clientmodule.ClientModuleResolver.resolve(ClientModuleResolver.java:70)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.ComponentState.resolve(ComponentState.java:224)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.ComponentState.getResolveStateOrNull(ComponentState.java:168)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.EdgeState.calculateTargetNodes(EdgeState.java:213)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.EdgeState.attachToTargetNodes(EdgeState.java:148)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.attachToTargetRevisionsSerially(DependencyGraphBuilder.java:387)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.resolveEdges(DependencyGraphBuilder.java:277)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.traverseGraph(DependencyGraphBuilder.java:202)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder.resolve(DependencyGraphBuilder.java:161)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphResolver.resolve(DependencyGraphResolver.java:117)
+	at org.gradle.api.internal.artifacts.ivyservice.ResolutionExecutor.doResolve(ResolutionExecutor.java:519)
+	at org.gradle.api.internal.artifacts.ivyservice.ResolutionExecutor.resolveGraph(ResolutionExecutor.java:374)
+	at org.gradle.api.internal.artifacts.ivyservice.ShortCircuitingResolutionExecutor.resolveGraph(ShortCircuitingResolutionExecutor.java:96)
+	at org.gradle.api.internal.artifacts.ivyservice.DefaultConfigurationResolver.resolveGraph(DefaultConfigurationResolver.java:105)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:777)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:769)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphInBuildOperation(DefaultConfiguration.java:769)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.lambda$resolveExclusivelyIfRequired$5(DefaultConfiguration.java:761)
+	at org.gradle.api.internal.project.DefaultProjectStateRegistry$CalculatedModelValueImpl.update(DefaultProjectStateRegistry.java:509)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveExclusivelyIfRequired(DefaultConfiguration.java:756)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphIfRequired(DefaultConfiguration.java:749)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$900(DefaultConfiguration.java:159)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getValue(DefaultConfiguration.java:722)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ResolverResultsResolutionResultProvider.getValue(DefaultConfiguration.java:708)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProvider$1.getValue(ResolutionResultProvider.java:54)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProviderBackedSelectedArtifactSet.visitArtifacts(ResolutionResultProviderBackedSelectedArtifactSet.java:50)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.SelectedArtifactSet.visitFiles(SelectedArtifactSet.java:34)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.visitContents(ResolutionBackedFileCollection.java:75)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.visitContents(DefaultConfiguration.java:550)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:67)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:92)
+	at org.gradle.api.internal.file.DefaultFileCollectionFactory$ResolvingFileCollection.visitChildren(DefaultFileCollectionFactory.java:306)
+	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.tasks.PropertyFileCollection.visitChildren(PropertyFileCollection.java:48)
+	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter.snapshot(DefaultFileCollectionSnapshotter.java:47)
+	at org.gradle.internal.execution.impl.DefaultInputFingerprinter$InputCollectingVisitor.visitInputFileProperty(DefaultInputFingerprinter.java:133)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.visitRegularInputs(TaskExecution.java:324)
+	at org.gradle.internal.execution.impl.DefaultInputFingerprinter.fingerprintInputProperties(DefaultInputFingerprinter.java:63)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionStateWithOutputs(AbstractCaptureStateBeforeExecutionStep.java:109)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.lambda$captureExecutionState$0(AbstractCaptureStateBeforeExecutionStep.java:74)
+	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:37)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:34)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionState(AbstractCaptureStateBeforeExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:62)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Compile failed in findRecomp. See log for more details
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:34: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.1;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:35: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.2;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:36: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.3;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: '(' or '[' expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                       ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:58: error: <identifier> expected
+        new 2(StrongholdPieces.PortalRoom.class, 20, 1)
+                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:60: error: unnamed classes are a preview feature and are disabled by default.
+    private static List<StrongholdPieces.PieceWeight> currentPieces;
+                   ^
+  (use --enable-preview to enable unnamed classes)
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1786: error: class, interface, enum, or record expected
+}
+^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1: error: unnamed class should not have package declaration
+package net.minecraft.world.level.levelgen.structure.structures;
+^
+41 errors
+org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:34: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.1;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:35: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.2;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:36: error: ';' expected
+import net.minecraft.world.level.levelgen.structure.structures.StrongholdPieces.3;
+                                                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: '(' or '[' expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                       ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:57: error: <identifier> expected
+        new 1(StrongholdPieces.Library.class, 10, 2),
+                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:58: error: <identifier> expected
+        new 2(StrongholdPieces.PortalRoom.class, 20, 1)
+                                               ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:60: error: unnamed classes are a preview feature and are disabled by default.
+    private static List<StrongholdPieces.PieceWeight> currentPieces;
+                   ^
+  (use --enable-preview to enable unnamed classes)
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1592: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1651: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: ')' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                          ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                 ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                  ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                           ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                            ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                   ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                    ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                     ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                      ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1710: error: case, default, or '}' expected
+                switch (3.$SwitchMap$net$minecraft$core$Direction[direction.ordinal()]) {
+                                                                                        ^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1786: error: class, interface, enum, or record expected
+}
+^
+C:\Users\lione\git\minemod\Forge MDK\build\tmp\.cache\expanded\zip_53cbd4df4ddc2fef2bb57dd17e0f8143\net\minecraft\world\level\levelgen\structure\structures\StrongholdPieces.java:1: error: unnamed class should not have package declaration
+package net.minecraft.world.level.levelgen.structure.structures;
+^
+41 errors
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:84)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:205)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:32)
+	at net.minecraftforge.gradle.userdev.tasks.HackyJavaCompile.doHackyCompile(HackyJavaCompile.java:45)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.compileJava(MinecraftUserRepo.java:1411)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findRecomp(MinecraftUserRepo.java:1266)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findRaw(MinecraftUserRepo.java:597)
+	at net.minecraftforge.gradle.userdev.MinecraftUserRepo.findFile(MinecraftUserRepo.java:461)
+	at net.minecraftforge.gradle.common.util.BaseRepo.getArtifact(BaseRepo.java:67)
+	at net.minecraftforge.gradle.common.util.BaseRepo.getArtifact(BaseRepo.java:27)
+	at net.minecraftforge.gradle.common.util.BaseRepo$Builder.lambda$null$0(BaseRepo.java:120)
+	at net.minecraftforge.gradle.common.util.BaseRepo$Builder.lambda$attach$2(BaseRepo.java:122)
+	at net.minecraftforge.artifactural.base.repository.ArtifactProviderBuilder$Complete.getArtifact(ArtifactProviderBuilder.java:92)
+	at net.minecraftforge.artifactural.base.repository.SimpleRepository.getArtifact(SimpleRepository.java:41)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.findArtifact(GradleRepositoryAdapter.java:388)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.resource(GradleRepositoryAdapter.java:367)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$GeneratingFileResourceRepository.resource(GradleRepositoryAdapter.java:361)
+	at org.gradle.internal.resource.transport.file.FileTransport$FileCacheAwareExternalResourceAccessor.getResource(FileTransport.java:74)
+	at org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver.downloadByCoords(DefaultExternalResourceArtifactResolver.java:149)
+	at org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver.downloadStaticResource(DefaultExternalResourceArtifactResolver.java:94)
+	at org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver.resolveArtifact(DefaultExternalResourceArtifactResolver.java:62)
+	at org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver$RemoteRepositoryAccess.resolveArtifact(ExternalResourceResolver.java:478)
+	at net.minecraftforge.artifactural.gradle.GradleRepositoryAdapter$1$1.resolveArtifact(GradleRepositoryAdapter.java:290)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository$ResolveAndCacheRepositoryAccess.resolveArtifact(CachingModuleComponentRepository.java:463)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.LocalModuleComponentRepository$LocalAccess.resolveArtifact(LocalModuleComponentRepository.java:91)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.lambda$resolveArtifact$12(ErrorHandlingModuleComponentRepository.java:169)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.tryResolveAndMaybeDisable(ErrorHandlingModuleComponentRepository.java:236)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.performOperationWithRetries(ErrorHandlingModuleComponentRepository.java:193)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingModuleComponentRepository$ErrorHandlingModuleComponentRepositoryAccess.resolveArtifact(ErrorHandlingModuleComponentRepository.java:167)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.FilteredModuleComponentRepository$FilteringAccess.resolveArtifact(FilteredModuleComponentRepository.java:117)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainArtifactResolver.resolveArtifactLater(RepositoryChainArtifactResolver.java:73)
+	at org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainArtifactResolver.lambda$resolveArtifact$0(RepositoryChainArtifactResolver.java:63)
+	at org.gradle.internal.model.CalculatedValueContainerFactory$SupplierBackedCalculator.calculateValue(CalculatedValueContainerFactory.java:69)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.lambda$attachValue$0(CalculatedValueContainer.java:229)
+	at org.gradle.internal.Try.ofFailable(Try.java:50)
+	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.attachValue(CalculatedValueContainer.java:224)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:195)
+	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:186)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ArtifactBackedResolvedVariant$DownloadArtifactFile.run(ArtifactBackedResolvedVariant.java:189)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$QueueWorker.execute(DefaultBuildOperationExecutor.java:161)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.runOperation(DefaultBuildOperationQueue.java:272)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.doRunBatch(DefaultBuildOperationQueue.java:253)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.lambda$runBatch$0(DefaultBuildOperationQueue.java:238)
+	at org.gradle.internal.resources.AbstractResourceLockRegistry.whileDisallowingLockChanges(AbstractResourceLockRegistry.java:50)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.whileDisallowingProjectLockChanges(DefaultWorkerLeaseService.java:235)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.lambda$runBatch$1(DefaultBuildOperationQueue.java:238)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:125)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.runBatch(DefaultBuildOperationQueue.java:224)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.run(DefaultBuildOperationQueue.java:192)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue.waitForCompletion(DefaultBuildOperationQueue.java:105)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.executeInParallel(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.runAll(DefaultBuildOperationExecutor.java:65)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ParallelResolveArtifactSet$VisitingSet.visit(ParallelResolveArtifactSet.java:66)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ResolvedArtifactSetResolver$1.run(ResolvedArtifactSetResolver.java:65)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ResolvedArtifactSetResolver.visitArtifacts(ResolvedArtifactSetResolver.java:62)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ResolvedArtifactSetResolver.lambda$visitInUnmanagedWorkerThread$0(ResolvedArtifactSetResolver.java:58)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsUnmanagedWorkerThread(DefaultWorkerLeaseService.java:139)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.ResolvedArtifactSetResolver.visitInUnmanagedWorkerThread(ResolvedArtifactSetResolver.java:58)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.DefaultSelectedArtifactSet.visitArtifacts(DefaultSelectedArtifactSet.java:59)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionResultProviderBackedSelectedArtifactSet.visitArtifacts(ResolutionResultProviderBackedSelectedArtifactSet.java:52)
+	at org.gradle.api.internal.artifacts.ivyservice.resolveengine.artifact.SelectedArtifactSet.visitFiles(SelectedArtifactSet.java:34)
+	at org.gradle.api.internal.artifacts.configurations.ResolutionBackedFileCollection.visitContents(ResolutionBackedFileCollection.java:75)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.visitContents(DefaultConfiguration.java:550)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:67)
+	at org.gradle.api.internal.file.collections.UnpackingVisitor.add(UnpackingVisitor.java:92)
+	at org.gradle.api.internal.file.DefaultFileCollectionFactory$ResolvingFileCollection.visitChildren(DefaultFileCollectionFactory.java:306)
+	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.api.internal.file.CompositeFileCollection.lambda$visitContents$0(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.tasks.PropertyFileCollection.visitChildren(PropertyFileCollection.java:48)
+	at org.gradle.api.internal.file.CompositeFileCollection.visitContents(CompositeFileCollection.java:113)
+	at org.gradle.api.internal.file.AbstractFileCollection.visitStructure(AbstractFileCollection.java:360)
+	at org.gradle.internal.fingerprint.impl.DefaultFileCollectionSnapshotter.snapshot(DefaultFileCollectionSnapshotter.java:47)
+	at org.gradle.internal.execution.impl.DefaultInputFingerprinter$InputCollectingVisitor.visitInputFileProperty(DefaultInputFingerprinter.java:133)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.visitRegularInputs(TaskExecution.java:324)
+	at org.gradle.internal.execution.impl.DefaultInputFingerprinter.fingerprintInputProperties(DefaultInputFingerprinter.java:63)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionStateWithOutputs(AbstractCaptureStateBeforeExecutionStep.java:109)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.lambda$captureExecutionState$0(AbstractCaptureStateBeforeExecutionStep.java:74)
+	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:37)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:34)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.captureExecutionState(AbstractCaptureStateBeforeExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:62)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:43)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:125)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:61)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.execute(HandleStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:289)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:48)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:35)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:61)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:127)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:331)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:318)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:314)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:46)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:263)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:85)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+Compile failed in findRecomp. See log for more details
+C:\Users\lione\git\minemod\Forge MDK\src\main\java\com\example\examplemod\ExampleMod.java:133: warning: [removal] get() in FMLJavaModLoadingContext has been deprecated and marked for removal
+                IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+                                                                ^
+C:\Users\lione\git\minemod\Forge MDK\src\main\java\com\example\examplemod\ExampleMod.java:136: warning: [removal] get() in ModLoadingContext has been deprecated and marked for removal
+                net.minecraftforge.fml.ModLoadingContext.get().registerConfig(
+                                                        ^
+Note: C:\Users\lione\git\minemod\Forge MDK\src\main\java\com\example\examplemod\item\GlitchSpawnEggItem.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+2 warnings
+
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :jar
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+[Incubating] Problems report is available at: file:///C:/Users/lione/git/minemod/Forge%20MDK/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 38s
+3 actionable tasks: 2 executed, 1 up-to-date

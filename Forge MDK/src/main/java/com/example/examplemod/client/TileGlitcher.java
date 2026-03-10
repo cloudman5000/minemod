@@ -79,6 +79,10 @@ public class TileGlitcher {
         });
 
         // 2. Glitch new blocks if a Glitch is near
+        if (!com.example.examplemod.config.ExampleModConfig.ENABLE_TILE_GLITCHES.get()) {
+            return;
+        }
+
         AABB searchBox = player.getBoundingBox().inflate(15);
         List<GlitchEntity> nearby = mc.level.getEntitiesOfClass(GlitchEntity.class, searchBox, GlitchEntity::isAlive);
 

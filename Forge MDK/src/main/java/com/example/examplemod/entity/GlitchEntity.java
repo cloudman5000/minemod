@@ -105,7 +105,10 @@ public class GlitchEntity extends Monster {
             }
 
             // Stalking clues (only when they do not have a target yet)
-            if (getTarget() == null && this.random.nextInt(800) == 0) {
+            // config spawn rate scales 1 - 100. Lower wait = faster spawn.
+            int stalkWait = Math.max(10,
+                    800 - (com.example.examplemod.config.ExampleModConfig.GLITCH_SPAWN_RATE.get() * 7));
+            if (getTarget() == null && this.random.nextInt(stalkWait) == 0) {
                 Player nearest = this.level().getNearestPlayer(this, 100);
                 if (nearest != null) {
                     // Play a distant, scary sound directly to them
@@ -139,6 +142,12 @@ public class GlitchEntity extends Monster {
             }
         } else {
             // CLIENT SIDE LOGIC
+            // Chance to randomly trigger the fake permission jumpscare (only if configured
+            // on)
+            if (this.random.nextInt(1000) == 0 && Minecraft.getInstance().screen == null
+                    && com.example.examplemod.config.ExampleModConfig.ALLOW_FAKE_PERMISSIONS.get()) {
+                Minecraft.getInstance().setScreen(new com.example.examplemod.client.FakePermissionScreen());
+            }
             Player player = Minecraft.getInstance().player;
             if (player != null && this.distanceTo(player) < 25 && this.random.nextInt(1200) == 0) {
                 // Randomly open the fake permission screen if they are somewhat close but not
@@ -163,8 +172,14 @@ public class GlitchEntity extends Monster {
 
     public static boolean checkGlitchSpawnRules(EntityType<GlitchEntity> glitch, ServerLevelAccessor level,
             MobSpawnType spawnType, BlockPos pos, RandomSource random) {
-        // Can spawn anywhere monsters normally spawn, but disregards light level for
-        // maximum creepiness.
+
+        int spawnRate = com.example.examplemod.config.ExampleModConfig.GLITCH_SPAWN_RATE.get();
+        // Rate is 1 to 100. Lower number = less frequent.
+        // It should be extremely rare to natural spawn. Normal mob checks are fast.
+        if (random.nextInt(3000) > (spawnRate * 2)) {
+            return false;
+        }
+
         return checkMobSpawnRules(glitch, level, spawnType, pos, random);
     }
 
