@@ -28,7 +28,7 @@ public class ExampleModConfig {
                 CLUE_SIGN_CHANCE = BUILDER
                                 .comment(
                                                 "Chance (1 in X) per tick for a Clue Sign to spawn when afflicted by Dread. Lower means MORE frequent.")
-                                .defineInRange("clueSignChance", 800, 100, 10000);
+                                .defineInRange("clueSignChance", 150, 20, 10000);
 
                 ALLOW_FAKE_PERMISSIONS = BUILDER
                                 .comment("Allow the Fake OS Permission screen to randomly appear.")

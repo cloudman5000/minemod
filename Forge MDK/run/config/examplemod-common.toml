@@ -5,7 +5,7 @@
 	#Range: 1 ~ 100
 	glitchSpawnRate = 50
 	#Chance (1 in X) per tick for a Clue Sign to spawn when afflicted by Dread. Lower means MORE frequent.
-	#Range: 100 ~ 10000
+	#Range: 20 ~ 10000
 	clueSignChance = 200
 	#Allow the Fake OS Permission screen to randomly appear.
 	allowFakePermissions = false

@@ -132,6 +132,9 @@ public class ExampleMod {
         public static final RegistryObject<Item> ESCAPE_RIFT_ITEM = ITEMS.register("escape_rift",
                         () -> new BlockItem(ESCAPE_RIFT_BLOCK.get(), new Item.Properties()));
 
+        public static final RegistryObject<Item> GLITCH_TEAR_ITEM = ITEMS.register("glitch_tear",
+                        () -> new com.example.examplemod.item.GlitchTearItem(new Item.Properties()));
+
         // Horror creative tab
         public static final RegistryObject<CreativeModeTab> HORROR_TAB = CREATIVE_MODE_TABS.register("horror_tab",
                         () -> CreativeModeTab.builder()
@@ -143,6 +146,7 @@ public class ExampleMod {
                                                 output.accept(CORRUPTING_BLOCK_ITEM.get());
                                                 output.accept(HACKING_TERMINAL_ITEM.get());
                                                 output.accept(ESCAPE_RIFT_ITEM.get());
+                                                output.accept(GLITCH_TEAR_ITEM.get());
                                                 output.accept(GLITCH_SPAWN_EGG.get());
                                         })
                                         .build());

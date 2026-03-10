@@ -94,21 +94,25 @@ public class HorrorConfigScreen extends Screen {
 
     private String getSignerSpawnChanceLabel() {
         int rate = ExampleModConfig.CLUE_SIGN_CHANCE.get();
-        if (rate <= 400)
+        if (rate <= 50)
+            return "Extreme";
+        if (rate <= 150)
             return "High";
-        if (rate <= 1000)
+        if (rate <= 500)
             return "Normal";
         return "Low";
     }
 
     private void cycleSignerSpawnChance() {
         int rate = ExampleModConfig.CLUE_SIGN_CHANCE.get();
-        if (rate <= 400) {
-            ExampleModConfig.CLUE_SIGN_CHANCE.set(800); // Jump to Normal
-        } else if (rate <= 1000) {
-            ExampleModConfig.CLUE_SIGN_CHANCE.set(2400); // Jump to Low
+        if (rate <= 50) {
+            ExampleModConfig.CLUE_SIGN_CHANCE.set(150); // Jump to High
+        } else if (rate <= 150) {
+            ExampleModConfig.CLUE_SIGN_CHANCE.set(500); // Jump to Normal
+        } else if (rate <= 500) {
+            ExampleModConfig.CLUE_SIGN_CHANCE.set(1500); // Jump to Low
         } else {
-            ExampleModConfig.CLUE_SIGN_CHANCE.set(200); // Jump back to High
+            ExampleModConfig.CLUE_SIGN_CHANCE.set(50); // Jump back to Extreme
         }
     }
 
