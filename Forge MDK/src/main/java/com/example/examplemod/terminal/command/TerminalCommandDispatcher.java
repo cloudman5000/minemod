@@ -12,8 +12,9 @@ public final class TerminalCommandDispatcher {
 
     public TerminalCommandDispatcher() {
         commandMap.put("help", (context, args) -> TerminalCommandResult.handled(List.of(
-                "core commands: help, exit, status, terminals, link, send, broadcast, inbox, history, connect, workflows, cancel",
-                "hacking-like commands run automatically without an ai prefix"
+                "commands: help, menu, ls, open <id>, back, cd <id>",
+                "network/tools: status, terminals, link, send, broadcast, inbox, history, connect, workflows, cancel, exit",
+                "tip: explore deeply - the arcade and rewards unlock through discoveries"
         )));
         commandMap.put("exit", (context, args) -> TerminalCommandResult.close(List.of("closing terminal...")));
         commandMap.put("status", (context, args) -> TerminalCommandResult.handled(List.of(

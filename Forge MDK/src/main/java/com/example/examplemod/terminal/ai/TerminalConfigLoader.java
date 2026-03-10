@@ -1,5 +1,6 @@
 package com.example.examplemod.terminal.ai;
 
+import com.example.examplemod.terminal.config.TerminalGameplayConfigLoader;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -49,6 +50,7 @@ public final class TerminalConfigLoader {
         openai.addProperty("endpoint", "https://api.openai.com/v1/chat/completions");
         openai.addProperty("timeoutSeconds", 20);
         root.add("openai", openai);
+        root.add("terminalOs", TerminalGameplayConfigLoader.defaultsAsJsonObject());
         root.addProperty("notes", "Set openai.apiKey here or use OPENAI_API_KEY environment variable.");
         return GSON.toJson(root);
     }

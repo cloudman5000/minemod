@@ -5,13 +5,19 @@ import net.minecraft.nbt.CompoundTag;
 public final class WorkflowState {
     private final String workflowId;
     private final String commandText;
+    private final String contextId;
     private int stepIndex;
     private long startedAtGameTime;
     private boolean running;
 
     public WorkflowState(String workflowId, String commandText, int stepIndex, long startedAtGameTime, boolean running) {
+        this(workflowId, commandText, "", stepIndex, startedAtGameTime, running);
+    }
+
+    public WorkflowState(String workflowId, String commandText, String contextId, int stepIndex, long startedAtGameTime, boolean running) {
         this.workflowId = workflowId;
         this.commandText = commandText;
+        this.contextId = contextId;
         this.stepIndex = stepIndex;
         this.startedAtGameTime = startedAtGameTime;
         this.running = running;
@@ -23,6 +29,10 @@ public final class WorkflowState {
 
     public String commandText() {
         return commandText;
+    }
+
+    public String contextId() {
+        return contextId;
     }
 
     public int stepIndex() {
@@ -49,6 +59,7 @@ public final class WorkflowState {
         CompoundTag tag = new CompoundTag();
         tag.putString("workflowId", workflowId);
         tag.putString("commandText", commandText);
+        tag.putString("contextId", contextId);
         tag.putInt("stepIndex", stepIndex);
         tag.putLong("startedAtGameTime", startedAtGameTime);
         tag.putBoolean("running", running);
@@ -59,6 +70,7 @@ public final class WorkflowState {
         return new WorkflowState(
                 tag.getString("workflowId"),
                 tag.getString("commandText"),
+                tag.getString("contextId"),
                 tag.getInt("stepIndex"),
                 tag.getLong("startedAtGameTime"),
                 tag.getBoolean("running")

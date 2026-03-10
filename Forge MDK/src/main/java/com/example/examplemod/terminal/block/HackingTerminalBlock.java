@@ -36,6 +36,10 @@ public class HackingTerminalBlock extends Block implements EntityBlock {
         }
 
         if (player instanceof ServerPlayer serverPlayer) {
+            BlockEntity blockEntity = level.getBlockEntity(pos);
+            if (blockEntity instanceof HackingTerminalBlockEntity terminalBlockEntity) {
+                terminalBlockEntity.onTerminalAccess(serverPlayer);
+            }
             MenuProvider menuProvider = new SimpleMenuProvider(
                     (windowId, inventory, ignored) -> new HackingTerminalMenu(windowId, inventory, pos),
                     Component.translatable("screen.examplemod.hacking_terminal")

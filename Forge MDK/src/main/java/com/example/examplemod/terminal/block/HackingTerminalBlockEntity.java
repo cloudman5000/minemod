@@ -39,7 +39,7 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
     public HackingTerminalBlockEntity(BlockPos pos, BlockState blockState) {
         super(ExampleMod.HACKING_TERMINAL_BLOCK_ENTITY.get(), pos, blockState);
         if (state.history().isEmpty()) {
-            state.history().add("REALITY RESTORATION TERMINAL v0.2");
+            state.history().add("FRIENDNET v0.3");
             state.history().add("type help for command list");
         }
     }
@@ -58,7 +58,24 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
         if (!(level instanceof ServerLevel serverLevel)) {
             return;
         }
+        if (!isAuthorizedOperator(player, serverLevel)) {
+            addHistoryLine("[error] terminal session unauthorized");
+            pushSync();
+            return;
+        }
         runtimeEngine.submitCommand(this, serverLevel, terminalId(serverLevel), player.getUUID(), command);
+        pushSync();
+    }
+
+    public void onTerminalAccess(ServerPlayer player) {
+        state.setActiveOperatorUuid(player.getUUID().toString());
+        state.history().clear();
+        state.history().add("FRIENDNET v0.4 // ONLINE");
+        state.history().add("hello, " + player.getName().getString() + " - circuits warmed up and ready");
+        state.history().add("type `help` for commands");
+        state.history().add("quick start: `menu`, `ls`, `open <id>`, `back`");
+        state.history().add("quirky tip: diagnostics first, then arcade, then vault surprises");
+        setChanged();
         pushSync();
     }
 
@@ -75,6 +92,30 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
 
     public AiAvailabilityState aiAvailabilityState() {
         return state.aiAvailabilityState();
+    }
+
+    public TerminalActivity activity() {
+        return state.activity();
+    }
+
+    public int corruptionPoints() {
+        return state.corruptionPoints();
+    }
+
+    public int corruptionStage() {
+        return state.corruptionStage();
+    }
+
+    public String activeMinigameId() {
+        return state.activeMinigameId();
+    }
+
+    public String activeMinigameKind() {
+        return state.activeMinigameKind();
+    }
+
+    public String minigameStateJson() {
+        return state.minigameStateJson();
     }
 
     public void onTerminalDestroyed() {
@@ -120,6 +161,31 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
         }
     }
 
+    private boolean isAuthorizedOperator(ServerPlayer player, ServerLevel serverLevel) {
+        if (player == null) {
+            return false;
+        }
+        String activeOperator = state.activeOperatorUuid();
+        if (activeOperator == null || activeOperator.isBlank()) {
+            return false;
+        }
+        if (!activeOperator.equals(player.getUUID().toString())) {
+            return false;
+        }
+        if (player.level() != serverLevel) {
+            return false;
+        }
+        double distanceSq = player.distanceToSqr(getBlockPos().getX() + 0.5, getBlockPos().getY() + 0.5, getBlockPos().getZ() + 0.5);
+        return distanceSq <= MAX_OPERATOR_DISTANCE_SQ;
+    }
+
+    private void addHistoryLine(String line) {
+        state.history().add(line);
+        while (state.history().size() > MAX_HISTORY) {
+            state.history().removeFirst();
+        }
+    }
+
     private String terminalId(ServerLevel level) {
         return TerminalId.of(level.dimension(), getBlockPos()).value();
     }
@@ -137,6 +203,15 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
         tag.putString("aiAvailability", state.aiAvailabilityState().name());
         tag.putString("activeOperator", state.activeOperatorUuid());
         tag.putLong("pendingUntilGameTime", state.pendingUntilGameTime());
+        tag.putString("activeNodeId", state.activeNodeId());
+        tag.putInt("selectedIndex", state.selectedIndex());
+        tag.putString("activeMinigameId", state.activeMinigameId());
+        tag.putString("activeMinigameKind", state.activeMinigameKind());
+        tag.putString("minigameStateJson", state.minigameStateJson());
+        tag.putInt("arcadeMoveIntent", state.arcadeMoveIntent());
+        tag.putBoolean("arcadeFireQueued", state.arcadeFireQueued());
+        tag.putInt("corruptionPoints", state.corruptionPoints());
+        tag.putInt("corruptionStage", state.corruptionStage());
 
         ListTag historyTag = new ListTag();
         for (String line : state.history()) {
@@ -149,6 +224,12 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
             inboxTag.add(StringTag.valueOf(line));
         }
         tag.put("inbox", inboxTag);
+
+        ListTag flagsTag = new ListTag();
+        for (String flag : state.progressionFlags()) {
+            flagsTag.add(StringTag.valueOf(flag));
+        }
+        tag.put("progressionFlags", flagsTag);
 
         if (state.workflowState() != null) {
             tag.put("workflow", state.workflowState().toTag());
@@ -170,6 +251,18 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
         }
         state.setActiveOperatorUuid(tag.getString("activeOperator"));
         state.setPendingUntilGameTime(tag.getLong("pendingUntilGameTime"));
+        state.setActiveNodeId(tag.getString("activeNodeId"));
+        state.setSelectedIndex(tag.getInt("selectedIndex"));
+        state.setActiveMinigameId(tag.getString("activeMinigameId"));
+        state.setActiveMinigameKind(tag.getString("activeMinigameKind"));
+        state.setMinigameStateJson(tag.getString("minigameStateJson"));
+        state.setArcadeMoveIntent(tag.getInt("arcadeMoveIntent"));
+        state.setArcadeFireQueued(tag.getBoolean("arcadeFireQueued"));
+        state.setCorruptionPoints(tag.getInt("corruptionPoints"));
+        state.setCorruptionStage(tag.getInt("corruptionStage"));
+        if (state.activeNodeId() == null || state.activeNodeId().isBlank()) {
+            state.setActiveNodeId("root");
+        }
 
         state.history().clear();
         ListTag historyTag = tag.getList("history", Tag.TAG_STRING);
@@ -184,6 +277,15 @@ public class HackingTerminalBlockEntity extends BlockEntity implements TerminalS
         ListTag inboxTag = tag.getList("inbox", Tag.TAG_STRING);
         for (Tag element : inboxTag) {
             state.inbox().add(element.getAsString());
+        }
+
+        state.progressionFlags().clear();
+        ListTag flagsTag = tag.getList("progressionFlags", Tag.TAG_STRING);
+        for (Tag element : flagsTag) {
+            String flag = element.getAsString();
+            if (flag != null && !flag.isBlank()) {
+                state.progressionFlags().add(flag);
+            }
         }
 
         if (tag.contains("workflow", Tag.TAG_COMPOUND)) {
